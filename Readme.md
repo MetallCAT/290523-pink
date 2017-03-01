@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ольга Ковчуга](https://up.htmlacademy.ru/adaptive/10/user/290523).
-* Наставник: `Неизвестно`.
+* Наставник: `Никита Рогатнев`.
 
 ---
 
