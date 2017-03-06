@@ -5,21 +5,21 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav main-nav--closed">
-        <h2 class="main-nav__caption">PINK</h1>  
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">PINK</a>
+      </div>
+      <nav class="main-nav main-nav--closed">          
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="">Фотографии</a></li>
-            <li class="main-nav__item"><a href="">Конкурс</a></li>
-            <li class="main-nav__item"><a href="">Html Academy</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
           </ul>            
         </div>    
-      </nav>      
-    </header>
-    <main>
+      </nav>   
       <section class="application">
         <img src="#" width="" height="" alt="">
         <button class="application__download" type="button">Скачать приложение</button>
@@ -30,6 +30,8 @@
           <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
         </div>  
       </section>
+    </header>
+    <main class="main">      
       <section class="advantage">
         <h1 class="advantage__caption">Устали от серости мегаполиса?<br> Нам есть, что вам  предложить!</h1>
         <b class="advantage__accent">Поднимает настроение</b>
@@ -48,35 +50,38 @@
           <label class="slider__toggle" for="comment-input-2">2</label>
           <label class="slider__toggle" for="comment-input-3">3</label>
         </div>
-      </section>
-      <section class="option">
-        <table class="option__items">
+      </section>      
+      <section class="price">
+        <table class="price__items">
           <tr>
-            <td class="option__value-price" colspan="2">Стандарт<br>3,99 USD</td>            
-          </tr>
+            <th class="price__item">
+              <b>базовый</b> <span>1,99 USD</span> </th>
+            <th class="price__item">
+              <b>стандарт</b> <span>3,99 USD</span> </th>
+            <th class="price__item">
+              <b>безлимитный</b> <span>9,99 USD</span> </th>
+            </tr>
+            <tr>
+              <td>розовый фильтр +</td>
+              <td>розовый фильтр +</td>
+              <td>розовый фильтр +</td>
+            </tr>
+            <tr>
+              <td>смайлики -</td>
+              <td>смайлики +</td>
+              <td>смайлики +</td>
+            </tr>
           <tr>
-            <td class="option__value">Розовый фильтр</td>
-            <td class="option__check">Галочка</td>
-          </tr>
-          <tr>
-            <td class="option__value">Смайлики</td>
-            <td class="option__check">Галочка</td>
-          </tr>
-          <tr>
-            <td class="option__value">Комментарии</td>
-            <td class="option__cross">Крестик</td>
+              <td>коментарии -</td>
+              <td>коментарии -</td>
+              <td>коментарии +</td>
           </tr>
         </table>
-        <div class="option__toggles slider__toggles">
-          <label class="slider__toggle" for="option-input-1">1</label>
-          <label class="slider__toggle" for="option-input-2">2</label>
-          <label class="slider__toggle" for="option-input-3">3</label>
-        </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">        
-        <p class="page-footer__contacts">
+    <footer class="footer">
+      <div class="footer__wrapper">        
+        <p class="footer__contacts">
           <b>Остались вопросы? Свяжитесь с нами</b><br>
           Звоните:<br>
           <a href="#">7(812)5556666</a><br>
