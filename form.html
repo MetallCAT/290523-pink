@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">PINK</a>
+      </div>
+      <nav class="main-nav main-nav--closed">         
+        <div class="main-nav__wrapper">          
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a>Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>            
+        </div>    
+      </nav>
+      <button class="header__toggle" type="button">Открыть меню</button>
+      <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </header>
+    <main class="main-form">
+      <form class="main-form__full-name" method="post" action="https://echo.htmlacademy.ru/">
+        <div class="main-form__cover">
+          <p class="main-form__cover-paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <label for="surname">ФАМИЛИЯ:</label>
+          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+          <label for="name">ИМЯ:</label>
+          <input id="name" type="text" name="name" placeholder="Введите ваше имя*">
+          <label for="second-name">ОТЧЕСТВО:</label>
+          <input id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже">
+        </div>
+        <div class="main-form__cover">
+          <h2 class="main-form__cover-title">Ваши безбашенные достижения в путешествии</h2>
+          <input id="shark" type="checkbox" name="progress" value="shark" checked>
+          <label for="shark">Сделал селфи с акулой</label>
+          <input id="beach" type="checkbox" name="progress" value="beach" checked>
+          <label for="beach">Обгорел на пляже</label>
+          <input id="Chack-Noris" type="checkbox" name="progress" value="Chack-Noris">
+          <label for="Chack-Noris">Видел Чака Нориса</label>
+          <input id="souvenir" type="checkbox" name="progress" value="souvenir">
+          <label for="souvenir">накупил сувениров</label>
+          <input id="tower" type="checkbox" name="progress" value="tower" checked>
+          <label for="tower">Удержал башню</label>
+          <input id="hotel" type="checkbox" name="progress" value="hotel">
+          <label for="hotel">Разгромил отель</label>
+        </div>
+        <div class="main-form__cover">
+          <label for="phone">номер телефона</label>
+          <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+          <label for="email">адрес почты</label>
+          <input id="email" type="text" name="email" placeholder="Введите почту*">
+        </div>
+        <div class="main-form__cover">
+          <h2 class="main-form__cover-title">С каким приложением путешествовали?</h2>
+          <input id="ios" type="radio" name="apposition" value="ios" checked>
+          <label for="ios">Pink для iOS</label>
+          <input id="android" type="radio" name="apposition" value="android">
+          <label for="android">Pink на Android</label>
+          <input id="windows-phone" type="radio" name="apposition" value="windows-phone">
+          <label for="windows-phone">Windows Phone</label>
+        </div>
+        <div class="main-form__cover">
+          <h2 class="main-form__cover-title">Опишите свои эмоции</h2>
+          <textarea cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <button class="main-form__btn" type="submit">Отправить форму</button>
+          <span class="main-form__needed"><sup>*</sup> - Обязательные поля</span> 
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="#">
+          <img src="" width="" height="" alt=""> 
+        </a>
+      </div>
+      <ul class="social">
+        <li><a href="https://twitter.com">twitter</a></li>
+        <li><a href="https://www.facebook.com">facebook</a></li>
+        <li><a href="https://www.youtube.com">youtube</a></li>
+      </ul>
+      <div class="creator">
+        <span class="creator__tille">Разработано</span>
+        <img src="#" width="" height="" alt="">
+      </div>
+    </footer>
+  </body>
+</html>
+    

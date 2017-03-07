@@ -5,8 +5,98 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="header">
+      <div class="header__logo">
+        <a href="#">PINK</a>
+      </div>
+      <nav class="main-nav main-nav--closed">          
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__items">
+            <li class="main-nav__item"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru">Html Academy</a></li>
+          </ul>            
+        </div>    
+      </nav>
+      <button class="header__toggle" type="button">Открыть меню</button>
+      <section class="application">
+        <img src="#" width="" height="" alt="">
+        <button class="application__download" type="button">Скачать приложение</button>
+        <div class="application__logotips">
+          <img src="#" width="" height="" alt="apple">
+          <img src="#" width="" height="" alt="android">
+          <img src="#" width="" height="" alt="microsoft">
+          <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+        </div>  
+      </section>
+    </header>
+    <main class="main">      
+      <section class="advantage">
+        <h2 class="advantage__caption">Устали от серости мегаполиса?</h2>
+        <h2 class="advantage__caption">Нам есть, что вам  предложить!</h2>
+        <b class="advantage__accent">Поднимает настроение</b>
+        <p class="advantage__content">Приложение позволит вам победить осеннюю </p>
+        <b class="advantage__accent">Меняет мир вокруг</b>
+        <p class="advantage__content">Сделайте снимок и украсьте его смайликом или</p>
+        <b class="advantage__accent">Заводит новых друзей</b>
+        <p class="advantage__content">Ставьте лайки, комментируте, делитесь фот</p>
+        <img src="#" width="" height="" alt="">
+      </section>
+      <section class="comment">
+        <b class="comment__name">Николай Петров</b>
+        <p class="comment__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+        <div class="slider">
+          <label class="slider__toggle" for="comment-input-1">1</label>
+          <label class="slider__toggle" for="comment-input-2">2</label>
+          <label class="slider__toggle" for="comment-input-3">3</label>
+        </div>
+      </section>      
+      <section class="price">
+        <table class="price__items">
+          <tr>
+            <th class="price__item">
+              <b>базовый</b>
+              <span>1,99 USD</span>
+            </th>
+            <th class="price__item">
+              <b>стандарт</b>
+              <span>3,99 USD</span>
+            </th>
+            <th class="price__item">
+              <b>безлимитный</b>
+              <span>9,99 USD</span>
+            </th>
+          </tr>
+          <tr>
+            <td>розовый фильтр +</td>
+            <td>розовый фильтр +</td>
+            <td>розовый фильтр +</td>
+          </tr>
+          <tr>
+            <td>смайлики -</td>
+            <td>смайлики +</td>
+            <td>смайлики +</td>
+          </tr>
+          <tr>
+            <td>коментарии -</td>
+            <td>коментарии -</td>
+            <td>коментарии +</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">       
+        <h2 class="footer__title">Остались вопросы? Свяжитесь с нами</h2>
+        <span class="footer__tout">Звоните:</span>
+        <a href="#">7(812)5556666</a>
+        <span class="footer__tout">Пишите:</span>
+        <a href="#">mail@htmlacademy.ru</a>
+        <span class="footer__tout">Приезжайте в гости:</span>
+        <p class="footer__address">Ул.Большая Конюшенная, 19/8</p>        
+        <iframe src=""></iframe>
+      </div>
+    </footer>   
   </body>
 </html>
