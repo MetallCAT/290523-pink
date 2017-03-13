@@ -16,16 +16,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
             <li class="main-nav__item">
-              <a>Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
+              <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">Html Academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
             </li>
           </ul>            
         </div>    
@@ -35,11 +35,17 @@
         <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="ifone-hand">
         <button class="application__download" type="button">Скачать приложение</button>
         <div class="application__logotips">
-          <img src="img/logo-apple.svg" width="47" height="57" alt="apple">
-          <img src="img/logo-android.svg" width="43" height="48" alt="android">
+          <a class="application__logotip" href="#">
+            <img src="img/logo-apple.svg" width="47" height="57" alt="apple">
+          </a>
+          <a class="application__logotip" href="#">
+            <img src="img/logo-android.svg" width="43" height="48" alt="android">
+          </a>
+          <a class="application__logotip" href="#">
           <img src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft">
-          <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
-        </div>  
+          </a>          
+        </div>
+        <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
       </section>
     </header>
     <main class="main">      
@@ -99,14 +105,15 @@
     </main>
     <footer class="footer">
       <div class="footer__wrapper">       
-        <h2 class="footer__title">Остались вопросы? Свяжитесь с нами</h2>
+        <h2 class="footer__title">Остались вопросы?</h2>
+        <h2 class="footer__title">Свяжитесь с нами!</h2>  
         <span class="footer__tout">Звоните:</span>
         <a class="footer__ref" href="#">7(812)5556666</a>
         <span class="footer__tout">Пишите:</span>
         <a class="footer__ref" href="#">mail@htmlacademy.ru</a>
         <span class="footer__tout">Приезжайте в гости:</span>
         <a class="footer__ref" href="#">Ул.Большая Конюшенная, 19/8</a>      
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6146657631202!2d30.320266216356984!3d59.93853598187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479831590862" width="1160" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6146657631202!2d30.320266216356984!3d59.93853598187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479831590862" width="340" height="612" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </footer>   
   </body>

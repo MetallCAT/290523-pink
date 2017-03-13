@@ -1,23 +1,44 @@
 application {
- background-color: @dark-blue;
- color: @white;
- padding-top: 30px;
+  display: flex;
+  align-items: center;  
+  background-color: @dark-blue;
+  color: @white;
+  padding-top: 30px;
 }
 
 .application__download {
+  width: 280px;  
   padding: 15px 25px;  
   font-size: 18px;
   line-height: 18px;
   .fonts-bold();
-  border-radius: 3px solid @white;
+  border: 3px solid @white;
+  border-radius: 30px;
+  cursor: pointer;
+  color: @white;
+  background-color: @dark-blue;
+  margin-left: 19px;
 }
 
 .application__logotips {
+  display: flex;
+  justify-content: space-between;
+  width: 205px;
   height: 110px;
-  width: 230px;  
+  margin-left: 57px;
+}
+
+.application__logotip {
+  height: 47px;
+  width: 47px;
+  align-self: center;
 }
 
 .application__description {
+  width: 230px;
   .fonts-light();
   line-height: 24px;
+  margin-left: 45px;
+  padding-bottom: 35px;
+  text-align: center;
 }
