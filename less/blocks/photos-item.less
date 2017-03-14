@@ -1,16 +1,28 @@
 .photos-item {
+  display: flex;
+  flex-direction: column;  
+}
+
+.photos-item__cadre {
   margin-top: 20px;
+  margin-left: 20px;
 }
 
 .photos-item__about {
-  width: 280px;
-  margin-left: 20px;
+  margin: 0 20px;
+  padding-left: 17px;
+  padding-bottom: 26px;
   background-color: @light-gray;
   line-height: 24px;
 }
 
 .photos-item__author {
-  .fonts-bold();   
+  .fonts-bold();
+  font-size: 14px;
+}
+
+.photos-item__comment {
+  
 }
 
 .photos-item__time {
@@ -21,4 +33,5 @@
 .photos-item__like {
   font-size: 12px;
   color: @red;
+  text-decoration: none;
 }

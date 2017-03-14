@@ -1,20 +1,64 @@
 .post {
   background-color: @light-gray;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 18px;
 }
 
 .post__photo {
-  width: 280px;
-  padding-top: 20px;
-  padding-left: 20px;
+  width: 280px;  
+}
+
+.post__photo-tuning {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 198px;
+  margin: 35px 38px;
+}
+
+.post__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background-color: @dark-gray;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.post__range {
+  position: absolute;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px; 
+  background-color: @light-gray;
+  border: 2px solid @red;
+  border-radius: 50%;
+  top: -6px;
+  left: 70%;
+  z-index: 1;
+  cursor: pointer;
 }
 
 .post__btn-post {
   width: 280px;
   height: 55px;
   margin-bottom: 12px;
+  border: 3px solid @red;
+  border-radius: 30px;
+  background-color: @light-gray;
+  color: @red;
+  font-size: 18px;
+  line-height: 18px;
 }
 
 .post__btn-cancel {
   width: 280px;
-  height: 55px; 
+  height: 55px;
+  border: 3px solid @btn-gray;
+  border-radius: 30px;
+  opacity: 0.1;
+  background-color: @light-gray;
+  font-size: 18px;
+  line-height: 18px;
 }
