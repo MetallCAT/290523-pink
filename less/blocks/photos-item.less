@@ -1,19 +1,44 @@
 .photos-item {
+  width: 100%;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
+  @media @tablet-widths {
+        
+  }
+  @media @desktop-widths {
+     
+  } 
 }
 
 .photos-item__cadre {
+  width: 280px;
+  height: 180px;
   margin-top: 20px;
   margin-left: 20px;
+  @media @tablet-widths {
+    width: 300px;
+    height: 300px;      
+  }
+  @media @desktop-widths {
+    width: 300px;
+    height: 400px;    
+  } 
 }
 
-.photos-item__about {
+.photos-item__about {  
   margin: 0 20px;
   padding-left: 17px;
   padding-bottom: 26px;
   background-color: @light-gray;
   line-height: 24px;
+  @media @tablet-widths {
+    width: 300px;
+    height: 155px;     
+  }
+  @media @desktop-widths {
+    width: 300px;
+    height: 155px;    
+  } 
 }
 
 .photos-item__author {

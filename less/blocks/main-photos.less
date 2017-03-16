@@ -1,12 +1,41 @@
 .main-photos {
-  .container();   
+  width: 100%; 
 }
 
 .main-photos__items {
+  .container();
   display: flex;
   flex-direction: column;
   justify-content: center; 
-  align-content: flex-start;  
+  align-content: flex-start;
+  @media @tablet-widths {
+    flex-flow: row wrap;      
+  }
+  @media @desktop-widths {
+    flex-flow: row wrap;
+  } 
+}
+
+.main-photos__item {
+
+}
+
+.main-photos__panorama {
+  width: 100%;  
+}
+
+.mine-photos__about {
+  margin: 0 20px;
+  padding-left: 17px;
+  padding-bottom: 26px;
+  background-color: @light-gray;
+  line-height: 24px;
+  @media @tablet-widths {
+    width: 620px;      
+  }
+  @media @desktop-widths {
+    width: 940px;
+  } 
 }
 
 .main-photos__title {
