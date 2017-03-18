@@ -31,10 +31,11 @@
   background-color: @light-gray;
   line-height: 24px;
   @media @tablet-widths {
-    width: 620px;      
+    width: 620px;    
   }
   @media @desktop-widths {
     width: 940px;
+    margin: 0 10px;
   } 
 }
 
@@ -46,7 +47,22 @@
 }
 
 .main-photos__epilog {
-  margin: 0;  
+  .container();
+  text-align: center;  
+  @media @tablet-widths {
+              
+  }
+  @media @desktop-widths {
+    
+  } 
+}
+
+.main-photos__epilogP { 
   padding: 0 32px;
-  text-align: center;
+  @media @tablet-widths {
+    font-size: 18px;    
+  }
+  @media @desktop-widths {
+    font-size: 18px;
+  } 
 }
