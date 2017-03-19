@@ -11,13 +11,30 @@ application {
   .container();
 }
 
-.application__image {
+.application__image {  
   @media @tablet-widths {
-      
+    margin-left: 190px;      
   }
   @media @desktop-widths {
-    
+    margin-left: 360px;    
   }
+}
+
+.application__h {
+  width: 240px;
+  .fonts-light();
+  display: none;
+  text-align: center;
+  @media @tablet-widths {
+    font-size: 40px;
+    display: flex;
+    margin-left: 47px;
+  }
+  @media @desktop-widths {
+    font-size: 50px;
+    display: flex;
+    margin-left: 35px;
+  }    
 }
 
 .application__download {
