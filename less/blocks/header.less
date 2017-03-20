@@ -1,12 +1,26 @@
 .header {
-  width: 100%;
+  width: 100%;  
   background-color: @dark-blue;
-  background-image: url("../img/bg-back-mobile@1x.jpg");  
-  color: @white;  
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  color: @white;
+  @media @tablet-widths {
+    background-image: url(../img/back-tablet-1x.png);    
+  }
+  @media @desktop-widths {
+    background-image: url(../img/back-desktop-jpg.png);          
+  }
 }
 
 .header__wrapper {
-  .container(); 
+  .container();
+  display: flex;
+  flex-direction: column;    
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__logo { 
@@ -18,6 +32,7 @@
   }
   @media @desktop-widths {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 27px;   
     padding-bottom: 43px;
     width: 147px;
@@ -56,10 +71,22 @@
 }
 
 .header__toggle {
-  width: 24px;
-  height: 23px;
+  width: 50px;
+  height: 25px;
+  margin: 22px 20px;
   font-size: 0px;
+  @media @tablet-widths {
+    width: 24px;
+    height: 23px;
+    font-size: 0px;          
+  }
   @media @desktop-widths {
     display: none;
+  }
+}
+
+.header__nav {
+  @media @desktop-widths {
+    
   }
 }

@@ -8,12 +8,13 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__logo">
-          <a href="#">
+        <div class="header__top">
+          <a class="header__logo" href="#">
             <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK-logo">
           </a>
+          <button class="header__toggle" type="button">Открыть меню</button>
         </div>
-        <nav class="main-nav main-nav--closed">          
+        <nav class="header__nav main-nav main-nav--closed">          
           <div class="main-nav__wrapper">
             <ul class="main-nav__items">
               <li class="main-nav__item">
@@ -30,27 +31,30 @@
               </li>
             </ul>            
           </div>    
-        </nav>
-        <button class="header__toggle" type="button">Открыть меню</button>
+        </nav>        
         <section class="application">
-          <div class="application__wrapper">
+          <div class="application__wrapper">            
             <div class="application__image">
-              <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="ifone-hand">
+              <h2 class="application__h">Взгляните на жизнь иначе!</h2>
+              <div class="application__image-hand"></div>
             </div>
-            <h2 class="application__h">Взгляните на жизнь иначе!</h2>
-            <button class="application__download" type="button">Скачать приложение</button>            
-            <div class="application__logotips">
-              <a class="application__logotip" href="#">
-                <img src="img/logo-apple.svg" width="47" height="57" alt="apple">
+            <div class="application__download">
+              <a class="" href="#">
+                <button class="application__button" type="button">Скачать приложение</button>
               </a>
-              <a class="application__logotip" href="#">
-                <img src="img/logo-android.svg" width="43" height="48" alt="android">
-              </a>
-              <a class="application__logotip" href="#">
-                <img src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft">
-              </a>          
-            </div>
-            <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+              <div class="application__logotips">
+                <a class="application__logotip" href="#">
+                  <img src="img/logo-apple.svg" width="47" height="57" alt="apple">
+                </a>
+                <a class="application__logotip" href="#">
+                  <img src="img/logo-android.svg" width="43" height="48" alt="android">
+                </a>
+                <a class="application__logotip" href="#">
+                  <img src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft">
+                </a>
+              </div>
+              <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+            </div>            
           </div>
         </section>
       </div>
