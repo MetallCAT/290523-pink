@@ -1,6 +1,5 @@
 application {
-  width: 100%;    
-  background-color: @dark-blue;
+  width: 100%; 
   color: @white;
   margin-top: 30px;  
 }
@@ -8,10 +7,8 @@ application {
 .application__wrapper {
   .container();
   display: flex;
-  flex-direction: column;
-  background-image: url(../img/iphone-hand-mobile@1x.png);
-  background-repeat: no-repeat;
-  @media @tablet-widths {    
+  flex-direction: column;  
+  @media @tablet-wi {    
     align-items: flex-start;
     background-image: url(../img/iphone-hand-tablet.png);
     background-position: center;
@@ -24,12 +21,12 @@ application {
 }
 
 .application__image {
-  display: flex;    
+  display: flex;  
   @media @tablet-widths {    
-    margin-top: 70px;   
+    display: none;
   }
   @media @desktop-widths {
-    margin-top: 100px;        
+    display: none;          
   }
 }
 
@@ -42,11 +39,13 @@ application {
     font-size: 40px;
     display: flex;
     margin-left: 47px;
+    margin-top: 70px;
   }
   @media @desktop-widths {
     font-size: 50px;
     display: flex;
-    margin-left: 35px;    
+    margin-left: 35px;
+    margin-top: 100px;
   }    
 }
 
@@ -59,13 +58,14 @@ application {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   @media @tablet-widths {    
     align-items: flex-start;
     background-color: transparent; 
   }
   @media @desktop-widths {
     align-items: flex-start;
-    background-color: transparent;   
+    background-color: transparent;  
   }
 }
 
@@ -82,6 +82,12 @@ application {
   background-color: @dark-blue;
   margin-left: 19px;
   margin-top: 28px;
+  @media @tablet-widths {   
+    background-color: transparent; 
+  }
+  @media @desktop-widths {   
+    background-color: transparent;  
+  }
 }
 
 .application__logotips {
