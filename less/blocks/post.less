@@ -31,6 +31,7 @@
 
 .post__box-top {
   display: flex;
+  flex-direction: column;
   @media @tablet-widths {    
     flex-direction: row;
     align-items: center;    
@@ -80,24 +81,13 @@
   justify-content: space-between;  
 }
 
-.post__scale-item {
-    
-}
-
-
 .post__scale {
   position: relative;
   width: 240px;
   height: 2px;
   background-color: @dark-gray;
   margin: auto;
-  margin-bottom: 30px;
-  @media @tablet-widths {    
-        
-  }
-  @media @desktop-widths {    
-         
-  } 
+  margin-bottom: 30px;   
 }
 
 .post__scale--setting {
