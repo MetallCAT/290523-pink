@@ -94,10 +94,6 @@
 
 }
 
-.footer__hidden {
-  display: none;
-}
-
 .footer__contacts {
   @media @tablet-widths {
     flex-direction: row;
@@ -106,5 +102,19 @@
   @media @desktop-widths {   
     flex-direction: row;
     align-content: space-between;
+  }  
+}
+
+.footer__hidden {
+  display: none;
+  @media @tablet-widths {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media @desktop-widths {   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }  
 }

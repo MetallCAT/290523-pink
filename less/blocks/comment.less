@@ -1,13 +1,26 @@
 .comment {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%; 
   text-align: center;
+  margin-top: 50px;  
 }
 
 .comment__wrapper {
   .container();
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.comment__text {
+  display: flex;
+  flex-direction: column;
+  @media @tablet-widths {    
+    flex-direction: column-reverse;    
+  }
+  @media @desktop-widths {    
+    flex-direction: column-reverse;
+    padding: 0 100px;
+  }
 }
 
 .comment__name {
@@ -18,5 +31,11 @@
 
 .comment__content {
   padding: 0 21px;
+}
+
+.comment__slider {
+  @media @desktop-widths {    
+    display: none;
+  }
 }
 
