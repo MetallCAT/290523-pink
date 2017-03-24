@@ -7,49 +7,53 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <a href="#">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK-logo">
-        </a>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK-logo">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">        
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+              </li>
+            </ul>            
+          </div>    
+        </nav>
+        <button class="header__toggle" type="button">Открыть меню</button>
+        <div class="header__title">
+          <h1 class="header__h1">Фотографии пользователей</h1>
+        </div>
       </div>
-      <nav class="main-nav main-nav--closed">        
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">Html Academy</a>
-            </li>
-          </ul>            
-        </div>    
-      </nav>
-      <button class="header__toggle" type="button">Открыть меню</button>
-      <h1 class="header__title">Фотографии пользователей</h1>
     </header>
     <main class="main-photos">
-      <section class="main-photos__items">
-        <p class="main-photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Anna">
-          <div class="photos-item__about">
+      <section class="main-photos__items">        
+        <article class="main-photos__item">
+          <p class="main-photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <img class="main-photos__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Anna">
+          <div class="mine-photos__about">
             <h1 class="photos-item__author">Анна<span class="photos-item__time">(5 минут назад)</span></h1>
             <p class="photos-item__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a href="#" class="photos-item__like">нравится: 215</a>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 215</a>
           </div>
         </article>
         <article class="photos-item"> 
           <img class="photos-item__cadre" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Levon">
           <div class="photos-item__about">
             <h1 class="photos-item__author">Левон<span class="photos-item__time">(5 часов назад)</span></h1>            
-            <p class="photos-item__comment">Вчера он на луну летал, сегодня в руки к нам попал</p>
-            <a href="#" class="photos-item__like">нравится: 356</a>
+            <p class="photos-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 356</a>
           </div>
         </article>
         <article class="photos-item"> 
@@ -57,15 +61,15 @@
           <div class="photos-item__about">
             <h1 class="photos-item__author">Антон<span class="photos-item__time">(12 часов назад)</span></h1>            
             <p class="photos-item__comment">Соседи будут рады!</p>
-            <a href="#" class="photos-item__like">нравится: 666</a>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 666</a>
           </div>
         </article>
         <article class="photos-item"> 
           <img class="photos-item__cadre" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Boris">
           <div class="photos-item__about">
             <h1 class="photos-item__author">Борис<span class="photos-item__time">(20 часов назад)</span></h1>            
-            <p class="photos-item__comment">Здесь могла быть ваша цитата о высоком и вечном</p>
-            <a href="#" class="photos-item__like">нравится: 215</a>
+            <p class="photos-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 215</a>
           </div>
         </article>
         <article class="photos-item"> 
@@ -73,7 +77,7 @@
           <div class="photos-item__about">
             <h1 class="photos-item__author">Сергей<span class="photos-item__time">(25 часов назад)</span></h1>            
             <p class="photos-item__comment">Самая кубанская в мире!</p>
-            <a href="#" class="photos-item__like">нравится: 4</a>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 4</a>
           </div>
         </article>
         <article class="photos-item"> 
@@ -81,7 +85,7 @@
           <div class="photos-item__about">
             <h1 class="photos-item__author">Максим<span class="photos-item__time">(40 часов назад)</span></h1>            
             <p class="photos-item__comment">Где снег то?</p>
-            <a href="#" class="photos-item__like">нравится: 150</a>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 150</a>
           </div>
         </article>
         <article class="photos-item"> 
@@ -89,56 +93,86 @@
           <div class="photos-item__about">
             <h1 class="photos-item__author">Надежда<span class="photos-item__time">(45 часов назад)</span></h1>            
             <p class="photos-item__comment">Всем GM и взаимные лайки!</p>
-            <a href="#" class="photos-item__like">нравится: 2560</a>
+            <a href="#" class="photos-item__like">НРАВИТСЯ: 2560</a>
           </div>
         </article>
+        <div class="main-photos__epilog">
+          <p class="main-photos__epilogP">Затмите их всех!</p> 
+          <p class="main-photos__epilogP">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
       </section>
       <section class="post">
-        <p class="post__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <img class="post__photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="post-photo">
-        <div class="post__photo-tuning">
-          <a href="#" class="post__correct">
-            <img class="post__photo" src="img/icon-editor-crop.svg" width="48" height="48" alt="post-editor-crop">  
-          </a>
-          <a href="#" class="post__setting">
-            <img class="post__photo" src="img/icon-editor-fill.svg" width="48" height="48" alt="post-editor-fill">    
-          </a>
-          <a href="#" class="post__contrast">
-            <img class="post__photo" src="img/icon-editor-contrast.svg" width="32" height="32" alt="post-editor-contrast">
-          </a>         
+        <div class="post__wrapper">
+          <img class="post__photo" src="img/photo-7-mobile@1x.jpg" width="280" height="374" alt="post-photo">
+          <div class="post__box">
+            <div class="post__box-top">
+              <div class="post__photo-tuning">
+                <div class="post__correct">
+                  <img src="img/icon-editor-crop.svg" width="48" height="48" alt="post-editor-crop">  
+                </div>
+                <div class="post__setting">
+                  <img src="img/icon-editor-fill.svg" width="48" height="48" alt="post-editor-fill">    
+                </div>
+                <div class="post__contrast">
+                  <img src="img/icon-editor-contrast.svg" width="32" height="32" alt="post-editor-contrast">
+                </div>         
+              </div>
+              <div class="post__scale-group">
+                <div class="post__scale-item post__scale-item--correct">
+                  <div class="post__scale post__scale--correct">
+                    <div class="post__range"></div>
+                  </div>                  
+                </div>
+                <div class="post__scale-item post__scale-item--setting">
+                  <div class="post__scale post__scale--setting">
+                    <div class="post__range"></div>
+                  </div>                  
+                </div>
+                <div class="post__scale-item post__scale-item--contrast">
+                  <div class="post__scale post__scale--contrast">
+                    <div class="post__range"></div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="post__button">
+              <button class="post__btn-post" type="submit">Запостить</button>
+              <button class="post__btn-cancel" type="button">Отмена</button>
+            </div>
+          </div>
         </div>
-        <button class="post__btn-post" type="submit">Запостить</button>
-        <button class="post__btn-cancel" type="button">Отмена</button>
       </section>      
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a href="#">
-          <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="PINK-logo-footer"> 
-        </a>
-      </div> 
-      <ul class="footer__social social">
-        <li class="social__icon">
-          <a href="https://twitter.com">
-            <img src="img/icon-twitter.svg" width="18" height="15" alt="twitter-logo">
+      <div class="footer__wrapper footer__contacts">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="PINK-logo-footer"> 
           </a>
-        </li>
-        <li class="social__icon">
-          <a href="https://www.facebook.com">
-            <img src="img/icon-facebook.svg" width="9" height="19" alt="facebook-logo">
+        </div> 
+        <ul class="footer__social social">
+          <li class="social__icons">
+            <a class="social__icon" href="https://twitter.com">
+              <img src="img/icon-twitter.svg" width="18" height="15" alt="twitter-logo">
+            </a>
+          </li>
+          <li class="social__icons">
+            <a class="social__icon" href="https://www.facebook.com">
+              <img src="img/icon-facebook.svg" width="9" height="19" alt="facebook-logo">
+            </a>
+          </li>
+          <li class="social__icons">
+            <a class="social__icon" href="https://www.youtube.com">
+              <img src="img/icon-youtube.svg" width="15" height="14" alt="youtube-logo">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__creator creator">
+          <span class="creator__tille">Разработано</span>
+          <a class="creator__link" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy-logo">
           </a>
-        </li>
-        <li class="social__icon">
-          <a href="https://www.youtube.com">
-            <img src="img/icon-youtube.svg" width="15" height="14" alt="youtube-logo">
-          </a>
-        </li>
-      </ul>
-      <div class="footer__creator creator">
-        <span class="creator__tille">Разработано</span>
-        <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy-logo">
-        </a>
+        </div>
       </div>
     </footer>
   </body>

@@ -7,111 +7,165 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
-        <a href="#">
-          <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK-logo">
-        </a>
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK-logo">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--closed">         
+          <div class="main-nav__wrapper">          
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="https://htmlacademy.ru">Html Academy</a>
+              </li>
+            </ul>            
+          </div>    
+        </nav>
+        <button class="header__toggle" type="button">Открыть меню</button>
+        <div class="header__title">
+          <h1 class="header__h1">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
-      <nav class="main-nav main-nav--closed">         
-        <div class="main-nav__wrapper">          
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">Html Academy</a>
-            </li>
-          </ul>            
-        </div>    
-      </nav>
-      <button class="header__toggle" type="button">Открыть меню</button>
-      <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="main-form">
-      <form class="main-form__full-name" method="post" action="https://echo.htmlacademy.ru/">
-        <div class="main-form__cover">
+      <div class="main-form__wrapper">
+        <form class="main-form__full-name" method="post" action="https://echo.htmlacademy.ru/">
           <p class="main-form__cover-paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-          <label for="surname">ФАМИЛИЯ:</label>
-          <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
-          <label for="name">ИМЯ:</label>
-          <input id="name" type="text" name="name" placeholder="Введите ваше имя*">
-          <label for="second-name">ОТЧЕСТВО:</label>
-          <input id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="main-form__cover">
-          <h2 class="main-form__cover-title">Ваши безбашенные достижения в путешествии</h2>
-          <input id="shark" type="checkbox" name="progress" value="shark" checked>
-          <label for="shark">Сделал селфи с акулой</label>
-          <input id="beach" type="checkbox" name="progress" value="beach" checked>
-          <label for="beach">Обгорел на пляже</label>
-          <input id="Chack-Noris" type="checkbox" name="progress" value="Chack-Noris">
-          <label for="Chack-Noris">Видел Чака Нориса</label>
-          <input id="souvenir" type="checkbox" name="progress" value="souvenir">
-          <label for="souvenir">накупил сувениров</label>
-          <input id="tower" type="checkbox" name="progress" value="tower" checked>
-          <label for="tower">Удержал башню</label>
-          <input id="hotel" type="checkbox" name="progress" value="hotel">
-          <label for="hotel">Разгромил отель</label>
-        </div>
-        <div class="main-form__cover">
-          <label for="phone">номер телефона</label>
-          <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
-          <label for="email">адрес почты</label>
-          <input id="email" type="text" name="email" placeholder="Введите почту*">
-        </div>
-        <div class="main-form__cover">
-          <h2 class="main-form__cover-title">С каким приложением путешествовали?</h2>
-          <input id="ios" type="radio" name="apposition" value="ios" checked>
-          <label for="ios">Pink для iOS</label>
-          <input id="android" type="radio" name="apposition" value="android">
-          <label for="android">Pink на Android</label>
-          <input id="windows-phone" type="radio" name="apposition" value="windows-phone">
-          <label for="windows-phone">Windows Phone</label>
-        </div>
-        <div class="main-form__cover">
-          <h2 class="main-form__cover-title">Опишите свои эмоции</h2>
-          <textarea cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          <button class="main-form__btn" type="submit">Отправить форму</button>
-          <span class="main-form__needed"><sup>*</sup> - Обязательные поля</span> 
-        </div>
-      </form>
+          <div class="main-form__cover-wrapper">
+            <div class="main-form__cover-user">
+              <div class="main-form__user-wrapper">
+                <div class="main-form__item-user">
+                  <label for="surname">ФАМИЛИЯ:</label>
+                  <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*">
+                </div>
+                <div class="main-form__item-user">
+                  <label for="name">ИМЯ:</label>
+                  <input id="name" type="text" name="name" placeholder="Введите ваше имя*">
+                </div>
+                <div class="main-form__item-user">
+                  <label for="second-name">ОТЧЕСТВО:</label>
+                  <input id="second-name" type="text" name="second-name" placeholder="Ну и отчество тоже">
+                </div>
+              </div>
+            </div>          
+            <div class="main-form__cover-app">
+              <div class="main-form__app-wrapper">
+                <h2 class="main-form__cover-title">С каким приложением путешествовали?</h2>
+                <div class="main-form__item-app">    
+                  <input id="ios" type="radio" name="apposition" value="ios" checked>
+                  <label for="ios">Pink для iOS</label>
+                </div>
+                <div class="main-form__item-app">
+                  <input id="android" type="radio" name="apposition" value="android">
+                  <label for="android">Pink на Android</label>
+                </div>
+                <div class="main-form__item-app">
+                  <input id="windows-phone" type="radio" name="apposition" value="windows-phone">
+                  <label for="windows-phone">Windows Phone</label>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="main-form__cover-achiev">
+            <div class="main-form__achiev-wrapper">
+              <h2 class="main-form__cover-title">Ваши безбашенные достижения в путешествии</h2>
+              <div class="main-form__items-achiev">
+                <div class="main-form__item-achiev">
+                  <input id="shark" type="checkbox" name="progress" value="shark" checked>
+                  <label for="shark">Сделал селфи с акулой</label>
+                </div>
+                <div class="main-form__item-achiev">
+                  <input id="beach" type="checkbox" name="progress" value="beach" checked>
+                  <label for="beach">Обгорел на пляже</label>
+                </div>
+                <div class="main-form__item-achiev">
+                  <input id="Chack-Noris" type="checkbox" name="progress" value="Chack-Noris">
+                  <label for="Chack-Noris">Видел Чака Нориса</label>
+                </div>
+                <div class="main-form__item-achiev">
+                  <input id="souvenir" type="checkbox" name="progress" value="souvenir">
+                  <label for="souvenir">накупил сувениров</label>
+                </div>
+                <div class="main-form__item-achiev">
+                  <input id="tower" type="checkbox" name="progress" value="tower" checked>
+                  <label for="tower">Удержал башню</label>
+                </div>
+                <div class="main-form__item-achiev">
+                  <input id="hotel" type="checkbox" name="progress" value="hotel">
+                  <label for="hotel">Разгромил отель</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="main-form__cover-title">Контактная информация</h2>
+          <div class="main-form__cover-contacts">
+            <div class="main-form__contacts-wrapper">
+              <div class="main-form__item-contacts">
+                <label for="phone">номер телефона</label>
+                <input id="phone" type="text" name="phone" placeholder="Номер, пожалуйста">
+              </div>
+              <div class="main-form__item-contacts">
+                <label for="email">адрес почты</label>
+                <input id="email" type="text" name="email" placeholder="Введите почту*">
+              </div>
+            </div>
+          </div>         
+          <div class="main-form__cover-emotions">
+            <div class="main-form__emotions-wrapper">
+              <div class="main-form__emotions-top">
+                <h2 class="main-form__cover-title">Опишите свои эмоции</h2>
+                <textarea class="main-form__cover-textarea" cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </div>
+              <div class="main-form__emotions-btn">
+                <button class="main-form__btn" type="submit">Отправить форму</button>
+                <span class="main-form__needed"><sup>*</sup> - Обязательные поля</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
     <footer class="footer">
-      <div class="footer__logo">
-        <a href="#">
-          <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="PINK-logo-footer"> 
-        </a>
-      </div>
-      <ul class="footer__social  social">
-        <li class="social__icon">
-          <a href="https://twitter.com">
-            <img src="img/icon-twitter.svg" width="18" height="15" alt="twitter-logo">
+      <div class="footer__wrapper footer__contacts">
+        <div class="footer__logo">
+          <a href="#">
+            <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="PINK-logo-footer"> 
           </a>
-        </li>
-        <li class="social__icon">
-          <a href="https://www.facebook.com">
-            <img src="img/icon-facebook.svg" width="9" height="19" alt="facebook-logo">   
+        </div>
+        <ul class="footer__social  social">
+          <li class="social__icons">
+            <a class="social__icon" href="https://twitter.com">
+              <img src="img/icon-twitter.svg" width="18" height="15" alt="twitter-logo">
+            </a>
+          </li>
+          <li class="social__icons">
+            <a class="social__icon" href="https://www.facebook.com">
+              <img src="img/icon-facebook.svg" width="9" height="19" alt="facebook-logo">   
+            </a>
+          </li>
+          <li class="social__icons">
+            <a class="social__icon" href="https://www.youtube.com">
+              <img src="img/icon-youtube.svg" width="15" height="14" alt="youtube-logo">
+            </a>
+          </li>
+        </ul>
+        <div class="footer__creator creator">
+          <span class="creator__tille">Разработано</span>
+          <a class="creator__link" href="https://htmlacademy.ru">
+            <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy-logo">
           </a>
-        </li>
-        <li class="social__icon">
-          <a href="https://www.youtube.com">
-            <img src="img/icon-youtube.svg" width="15" height="14" alt="youtube-logo">
-          </a>
-        </li>
-      </ul>
-      <div class="footer__creator creator">
-        <span class="creator__tille">Разработано</span>
-        <a href="https://htmlacademy.ru">
-          <img src="img/logo-htmlacademy.svg" width="27" height="35" alt="htmlacademy-logo">
-        </a>
+        </div>
       </div>
     </footer>
   </body>
-</html>
-    
+</html>    
