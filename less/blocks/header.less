@@ -21,6 +21,9 @@
 .header__top {
   display: flex;
   justify-content: space-between;
+  @media @desktop-widths {
+    position: relative;
+  } 
 }
 
 .header__logo { 
@@ -83,4 +86,20 @@
   @media @desktop-widths {
     display: none;
   }
+}
+
+.header__nav-index {
+  @media @desktop-widths {
+    position: absolute;
+    top: 5px;
+    left: 320px;
+  }  
+}
+
+.header__nav {
+  @media @desktop-widths {
+    position: absolute;
+    top: -25px;
+    left: 320px;
+  }  
 }

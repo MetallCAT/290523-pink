@@ -1,6 +1,5 @@
 .advantage {
-  width: 100%;  
-  padding-top: 45px;  
+  width: 100%;
   text-align: center;
   background-color: @light-gray;    
 }
@@ -12,7 +11,9 @@
   align-items: center;
 }
 
-.advantage__captions {
+.advantage__captions {  
+  margin-top: 45px;
+  margin-bottom: 30px;
   background-color: @white;  
   @media @tablet-widths {    
     margin-bottom: 32px;
@@ -26,14 +27,14 @@
   .fonts-light();
   font-size: 24px;
   margin: 0;
-  margin-bottom: 40px;      
+  padding-bottom: 40px;      
   @media @tablet-widths {
     font-size: 40px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
   }
   @media @desktop-widths {
     font-size: 50px;
-    margin-bottom: 18px;
+    padding-bottom: 18px;
   }
 }
 
@@ -91,16 +92,24 @@
   }
 }
 
-.advantage__day { 
-  display: flex;
+.advantage__day {    
   display: none;  
   @media @tablet-widths {    
     background-color: @white;
-    display: flex;
-    flex-direction: row;
+    display: flex;    
   }
   @media @desktop-widths {
-    display: flex;
+    background-color: @light-gray;
+    display: flex;    
+  }
+}
+
+.advantage__wrapper {
+  .container;
+  @media @tablet-widths {
+    flex-direction: row;
+  }
+  @media @desktop-widths {    
     flex-direction: row;
   }
 }
@@ -128,7 +137,8 @@
 .advantage__timer-desktop {
   display: none;
   @media @desktop-widths {
-    display: block;    
+    display: block;
+    background-color: @light-gray;
   }
 }
 
