@@ -5,10 +5,12 @@
   background-repeat: no-repeat;
   color: @white;
   @media @tablet-widths {
-    background-image: url(../img/back-tablet-1x.png);    
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+    background-size: 1200px auto;
   }
   @media @desktop-widths {
-    background-image: url(../img/back-desktop-jpg.png);          
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+    background-size: 2560px auto;
   }
 }
 
@@ -22,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   @media @desktop-widths {
-    position: relative;
+    position: relative;    
   } 
 }
 
@@ -31,15 +33,95 @@
   @media @tablet-widths {
     padding-top: 27px;
     padding-bottom: 43px;      
-    width: 147px;
+    width: 147px;    
   }
   @media @desktop-widths {
     display: flex;
     flex-wrap: wrap;
     padding-top: 27px;   
     padding-bottom: 43px;
-    width: 147px;
+    width: 147px;    
   }
+}
+
+.header__logo svg {
+  transform: translate(-70px, -15px);
+  @media @tablet-widths {
+    transform: translate(0, -5px);
+  }
+  @media @desktop-widths {
+    transform: translate(0, -5px);
+  }
+}
+
+.header__logo-radiance {
+  display: none;
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.header__logo-particle {
+  display: none;
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.header__logo-glasses--tablet {
+  display: none;
+  @media @tablet-widths {
+    display: inline;
+  }
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.header__logo-glasses--desktop {
+  display: none;
+  @media @desktop-widths {
+    display: inline;
+  }
+}
+
+.header__logo:hover .header__logo-text,
+.header__logo:hover .header__logo-glasses {
+  fill: @red;
+}
+
+.header__logo:active .header__logo-text,
+.header__logo:active .header__logo-glasses {
+  opacity: 0.3;
+}
+
+.header-img__mobile {
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: none;          
+  }  
+}
+
+.header-img__tablet {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+  @media @desktop-widths {
+    display: none;          
+  }  
+}
+
+.header-img__desktop {
+  display: none;
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: block;          
+  }    
 }
 
 .header__title {     
@@ -86,6 +168,14 @@
   @media @desktop-widths {
     display: none;
   }
+}
+
+.header__toggle:hover {
+  color: @red;
+}
+
+.header__toggle:active {
+  opacity: 0.3;
 }
 
 .header__nav-index {
