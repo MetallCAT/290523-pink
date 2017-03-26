@@ -1,15 +1,28 @@
 .social {
   display: flex;
   justify-content: space-between;
-  align-items: center;   
+  align-items: center;
   font-size: 0;
   width: 177px;  
-  margin: 40px 30px; 
+  margin: 40px 30px;  
 }
 
 .social__icons {  
   width: 45px;
   height: 45px;
   border: 3px solid @gray;
-  border-radius: 30px; 
+  border-radius: 30px;  
+}
+
+.social__icons:hover {
+  border: 3px solid @dark-gray;   
+}
+
+.social__icons:active {
+  opacity: 0.3;   
+}
+
+.social__icon svg {
+  margin-top: 15px;
+  fill: @red;
 }

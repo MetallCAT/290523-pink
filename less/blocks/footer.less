@@ -3,13 +3,7 @@
   display: flex;  
   flex-direction: column;
   padding-top: 40px; 
-  text-align: center;
-  @media @tablet-widths {
-    padding-top: 55px;      
-  }
-  @media @desktop-widths {
-    padding-top: 73px;    
-  }   
+  text-align: center;     
 }
 
 .footer__wrapper {
@@ -82,7 +76,17 @@
   color: @red;
 }
 
+.footer__ref:hover {
+  color: @dark-gray;   
+}
+
+.footer__ref:active {
+  color: @dark-gray;
+  opacity: 0.3;
+}
+
 .footer__contacts {
+  outline: 2px solid blue;
   @media @tablet-widths {
     flex-direction: row;
     align-content: space-between;
@@ -132,4 +136,18 @@
   @media @desktop-widths {
     display: inline;
   }
+}
+
+.footer__logo:hover .footer__logo-text,
+.footer__logo:hover .footer__logo-glasses {
+  fill: @red;
+}
+
+.footer__logo:active .footer__logo-text {
+  opacity: 0.3;
+  fill: @dark-gray;
+}
+
+.footer__logo:active .footer__logo-glasses {
+  opacity: 0.3;   
 }

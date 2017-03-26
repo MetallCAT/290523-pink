@@ -42,7 +42,7 @@
   }      
 }
 
-.post__photo {
+.post__display {
   display: flex;
   width: 280px;
   height: 375px;
@@ -169,10 +169,21 @@
   } 
 }
 
+.post__btn-post:hover {
+  background-color: @red;
+  color: @white;
+}
+
+.post__btn-post:active {
+  background-color: @red;
+  color: @white;
+  opacity: 0.3;
+}
+
 .post__btn-cancel {
   width: 280px;
   height: 55px;
-  border: 3px solid @btn-gray;
+  border: 3px solid @dark-gray;
   border-radius: 30px;
   opacity: 0.1;
   background-color: @light-gray;
@@ -184,4 +195,14 @@
   @media @desktop-widths {    
     width: 184px;     
   } 
+}
+
+.post__btn-cancel:hover {
+  opacity: 0.3;
+}
+
+.post__btn-cancel:active {  
+  color: @white;
+  background-color: @dark-gray;  
+  opacity: 0.3;
 }

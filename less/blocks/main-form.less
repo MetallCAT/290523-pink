@@ -271,10 +271,30 @@
   padding: 25px 47px;
   margin-top: 48px;
   color: @white;
-  background-color: @green; 
+  background-color: @green;
+  cursor: pointer;
+  border: none;
+}
+
+.main-form__btn:hover {
+  background-color: @green-hvr;    
+}
+
+.main-form__btn:active {
+  background-color: @green-hvr;
+  opacity: 0.3;
+}
+
+.main-form__btn:disabled {
+  background-color: @gray;
+  opacity: 0.3;
 }
 
 .main-form__needed {
   padding-top: 45px;
   padding-left: 49px;
+}
+
+.main-form__needed sup {
+  color: @red;
 }
