@@ -138,7 +138,10 @@
 }*/
 
 .post__button {
-  justify-content: center;  
+  outline: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
   margin: 0;
   margin-bottom: 15px;
   @media @tablet-widths {    
@@ -147,6 +150,7 @@
   @media @desktop-widths {  
     flex-direction: row;
     justify-content: space-between;
+    
     margin-top: 80px;
   } 
 }
@@ -165,7 +169,8 @@
     width: 260px;      
   }
   @media @desktop-widths {    
-    width: 184px;     
+    width: 184px;
+    margin-top: 12px;
   } 
 }
 

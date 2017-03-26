@@ -71,19 +71,33 @@
         </div>
       </div>
     </header>
-    <main class="main-photos">
+    <main class="main-photos">     
       <section class="main-photos__items">        
         <article class="main-photos__item">
           <p class="main-photos__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <img class="main-photos__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Anna">
-          <div class="mine-photos__about">
+          <!--<img class="main-photos__panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Anna">-->
+          <div class="main-photos__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="main-photos__panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="main-photos-panorama">
+            </picture>
+          </div>          
+          <div class="main-photos__about">
             <h1 class="photos-item__author">Анна<span class="photos-item__time">(5 минут назад)</span></h1>
             <p class="photos-item__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <a href="#" class="photos-item__like">НРАВИТСЯ: 215</a>
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Levon">
+          <!--<img class="photos-item__cadre" src="img/photo-1-mobile@1x.jpg" width="280" height="180" alt="Levon">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="photos-item-Levon">
+            </picture>
+          </div>     
           <div class="photos-item__about">
             <h1 class="photos-item__author">Левон<span class="photos-item__time">(5 часов назад)</span></h1>            
             <p class="photos-item__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -91,7 +105,14 @@
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Anton">
+          <!--<img class="photos-item__cadre" src="img/photo-2-mobile@1x.jpg" width="280" height="180" alt="Anton">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photos-item-Anton">
+            </picture>
+          </div>
           <div class="photos-item__about">
             <h1 class="photos-item__author">Антон<span class="photos-item__time">(12 часов назад)</span></h1>            
             <p class="photos-item__comment">Соседи будут рады!</p>
@@ -99,7 +120,14 @@
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Boris">
+          <!--<img class="photos-item__cadre" src="img/photo-3-mobile@1x.jpg" width="280" height="180" alt="Boris">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photos-item-Boris">
+            </picture>
+          </div>
           <div class="photos-item__about">
             <h1 class="photos-item__author">Борис<span class="photos-item__time">(20 часов назад)</span></h1>            
             <p class="photos-item__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -107,7 +135,14 @@
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Sergey">
+          <!--<img class="photos-item__cadre" src="img/photo-4-mobile@1x.jpg" width="280" height="180" alt="Sergey">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photos-item-Sergey">
+            </picture>
+          </div>
           <div class="photos-item__about">
             <h1 class="photos-item__author">Сергей<span class="photos-item__time">(25 часов назад)</span></h1>            
             <p class="photos-item__comment">Самая кубанская в мире!</p>
@@ -115,7 +150,14 @@
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Maksim">
+          <!--<img class="photos-item__cadre" src="img/photo-5-mobile@1x.jpg" width="280" height="180" alt="Maksim">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-5-desktop@1x.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="photos-item-Maksim">
+            </picture>
+          </div>
           <div class="photos-item__about">
             <h1 class="photos-item__author">Максим<span class="photos-item__time">(40 часов назад)</span></h1>            
             <p class="photos-item__comment">Где снег то?</p>
@@ -123,7 +165,14 @@
           </div>
         </article>
         <article class="photos-item"> 
-          <img class="photos-item__cadre" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Nadejda">
+          <!--<img class="photos-item__cadre" src="img/photo-6-mobile@1x.jpg" width="280" height="180" alt="Nadejda">-->
+          <div class="photos-item__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/photo-6-desktop@1x.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="photos-item__cadre" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photos-item-Nadejda">
+            </picture>
+          </div>
           <div class="photos-item__about">
             <h1 class="photos-item__author">Надежда<span class="photos-item__time">(45 часов назад)</span></h1>            
             <p class="photos-item__comment">Всем GM и взаимные лайки!</p>

@@ -113,7 +113,16 @@ n<!DOCTYPE html>
                 <p class="advantage__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
               </div>            
             </div>
-            <div class="advantage__images">
+            <div class="advantage__display">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+                <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img class="advantage__photo" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="advantage-photo">
+              </picture>
+            </div>
+            <!--<div class="advantage__images">
               <div class="advantage__images-gray">
                 <img class="advantage__image-gray" src="img/iphone-desktop-grey.png" width="186" height="382" alt="iphone-screen">
               </div>
@@ -122,8 +131,8 @@ n<!DOCTYPE html>
               </div>
               <div class="advantage__images-smyle"> 
                 <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="iphone-screen">
-              </div>            
-            </div>
+              </div>              
+            </div>-->
           </div>          
         </div>
       </section>
