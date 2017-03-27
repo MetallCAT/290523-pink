@@ -21,18 +21,23 @@
   } 
 }
 
-.photos-item__about {  
-  margin: 0 20px;  
+.photos-item__about {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 0 20px;
+  padding: 0 20px;
+  width: 240px;
   background-color: @light-gray;
   line-height: 24px;  
   @media @tablet-widths {
     margin: 0 10px;
-    width: 300px;
+    width: 260px;
     height: 155px;     
   }
   @media @desktop-widths {
     margin: 0 10px;
-    width: 300px;
+    width: 260px;
     height: 155px;    
   } 
 }
@@ -47,8 +52,47 @@
   .fonts-light();
 }
 
-.photos-item__like {
+.photos-item__comment {
+  outline: 1px solid blue;
+  height: 52px;
+}
+
+.photos-item__comment-panorama {
+  outline: 1px solid blue;
+  height: 95px;
+}
+
+.photos-item__like-wrapper {
+  display: flex;
+  align-items: center;
+  @media @tablet-widths {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  @media @desktop-widths {
+    flex-direction: row-reverse;
+    justify-content: space-between;      
+  }
+}
+
+.photos-item__btn-heart {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  font-size: 0;
+  border: 0;    
+  margin-right: 19px;
+  background: url("../img/icon-heart.svg") 1px 2px;
+  background-repeat: no-repeat;
+  @media @tablet-widths {
+    margin-right: 0;
+  }
+  @media @desktop-widths {
+    margin-right: 0;    
+  }
+}
+
+.photos-item__like {  
   font-size: 12px;
-  color: @red;
-  text-decoration: none;
+  color: @red;  
 }

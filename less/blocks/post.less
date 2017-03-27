@@ -1,17 +1,21 @@
-.post {
-  background-color: @light-gray;  
-  width: 100%;  
+.post {    
+  width: 100%;
+  background-color: @light-gray;
+  @media @desktop-widths {    
+    background-color: @white;         
+  }
 }
 
 .post__wrapper {
-  .container();
+  .container();  
   display: flex;
   flex-direction: column;
   @media @tablet-widths {    
     flex-direction: row;       
   }
   @media @desktop-widths {    
-    flex-direction: row;       
+    flex-direction: row;
+    background-color: @light-gray; 
   } 
 }
 
@@ -76,6 +80,7 @@
 }
 
 .post__photo-tuning svg {
+  cursor: pointer;
   opacity: 0.3;
   @media @tablet-widths {    
     opacity: 1;
@@ -181,8 +186,7 @@
   }
   @media @desktop-widths {  
     flex-direction: row;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     margin-top: 80px;
   } 
 }
@@ -197,6 +201,7 @@
   color: @red;
   font-size: 18px;
   line-height: 18px;
+  cursor: pointer;
   @media @tablet-widths {    
     width: 260px;      
   }
@@ -226,6 +231,7 @@
   background-color: @light-gray;
   font-size: 18px;
   line-height: 18px;
+  cursor: pointer;
   @media @tablet-widths {    
     width: 260px;      
   }
