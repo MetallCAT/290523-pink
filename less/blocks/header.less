@@ -17,15 +17,15 @@
 .header__wrapper {
   .container();
   display: flex;
-  flex-direction: column;    
+  flex-direction: column;
+  @media @desktop-widths {
+    position: relative;    
+  } 
 }
 
 .header__top {
   display: flex;
-  justify-content: space-between;
-  @media @desktop-widths {
-    position: relative;    
-  } 
+  justify-content: space-between;   
 }
 
 .header__logo { 
@@ -160,10 +160,15 @@
   height: 25px;
   margin: 22px 20px;
   font-size: 0px;
+  border: none;
+  background-color: @dark-gray;
+  cursor: pointer;
+  background-image: url("../img/icon-menu-burger.svg");  
   @media @tablet-widths {
     width: 24px;
     height: 23px;
-    font-size: 0px;          
+    font-size: 0px;    
+    background-image: url("../img/icon-menu-cross.svg");
   }
   @media @desktop-widths {
     display: none;
@@ -171,19 +176,12 @@
 }
 
 .header__toggle:hover {
-  color: @red;
+  fill: @red;
 }
 
 .header__toggle:active {
+  fill: @red;
   opacity: 0.3; 
-}
-
-.header__nav-index {
-  @media @desktop-widths {
-    position: absolute;
-    top: 5px;
-    left: 320px;
-  }  
 }
 
 .header__nav {
