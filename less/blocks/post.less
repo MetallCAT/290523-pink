@@ -66,6 +66,7 @@
 }
 
 .post__photo-tuning {
+  cursor: pointer;
   display: flex;  
   justify-content: space-between;
   align-items: center;
@@ -77,28 +78,6 @@
   @media @desktop-widths {    
     flex-direction: column;     
   } 
-}
-
-.post__photo-tuning svg {
-  cursor: pointer;
-  opacity: 0.3;
-  @media @tablet-widths {    
-    opacity: 1;
-    fill: @red;
-  }
-  @media @desktop-widths {    
-    opacity: 1;
-    fill: @red;
-  } 
-}
-
-.post__photo-tuning svg:hover {
-  opacity: 0.5;  
-}
-
-.post__photo-tuning-active {
-   opacity: 1;
-   fill: @red;  
 }
 
 .post__scale-group {
@@ -174,8 +153,7 @@
   } 
 }*/
 
-.post__button {
-  outline: 2px solid blue;
+.post__button {  
   display: flex;
   flex-direction: column;
   align-items: center;  
