@@ -80,6 +80,18 @@
   }
 }
 
+.main-form__item-user input {  
+  outline: none;
+}
+
+.main-form__item-user input:hover {
+  border-color: @dark-gray;  
+}
+
+.main-form__item-user input:active {
+  border-color: @red;  
+}
+
 .main-form__cover-app {
   outline: 1px solid @green; 
   background-color: @light-gray;  
@@ -103,11 +115,62 @@
   } 
 }
 
+.main-form__item-app {
+  margin-bottom: 40px;
+}
+
+.main-form__item-app label {
+  outline: 1px solid blue;
+  position: relative;
+  margin-left: 44px;  
+}
+
+.main-form__item-app label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  left: -62px;
+  top: -10px;  
+  width: 39px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 2px solid @tbl-gray;
+  border-radius: 50%;
+  background-color: @white;  
+}
+
+.main-form__item-app input:checked + label::before {
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
+.main-form__item-app input:checked + label:active::before {
+  background-image: none;  
+}
+
+.main-form__item-app label:hover::before {
+  border: 2px solid @dark-gray;    
+}
+
+.main-form__item-app label:active::before {
+  border: 2px solid @red;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
+
 .main-form__cover-title {
   font-size: 14px;
   line-height: 18px; 
   color: @red;
   text-align: center;
+  margin-bottom: 40px;
+  @media @tablet-widths {
+    margin-bottom: 45px;      
+  }
+  @media @desktop-widths {
+    margin-bottom: 42px;
+  }
 }
 
 .main-form__cover-achiev {  
@@ -129,7 +192,7 @@
   padding-bottom: 43px;
   padding-right: 60px;  
   @media @desktop-widths {   
-    width: 832px;       
+    width: 840px;       
   }  
 }
 
@@ -142,11 +205,53 @@
   }    
 }
 
-.main-form__item-achiev {  
+.main-form__item-achiev {
+  margin-bottom: 40px;
   @media @desktop-widths {
-    width: 200px;
-    margin-right: 20px;
+    width: 270px;
+    margin-right: 10px;
   }    
+}
+
+.main-form__item-achiev label {
+  position: relative;
+  margin-left: 44px;
+  outline: 1px solid blue;
+}
+
+.main-form__item-achiev label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  left: -62px;
+  top: -10px;  
+  width: 39px;
+  height: 39px;
+  box-sizing: border-box;
+  border: 2px solid @tbl-gray;
+  background-color: @white;  
+}
+
+.main-form__item-achiev input:checked + label::before {
+  background-image: url("../img/icon-yes.svg");    
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-form__item-achiev input:checked + label:active::before {
+  background-image: none;    
+}
+
+.main-form__item-achiev label:hover::before {
+  border: 2px solid @dark-gray;    
+}
+
+.main-form__item-achiev label:active::before {
+  border: 2px solid @red;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .main-form__cover-contacts {  
@@ -199,12 +304,44 @@
 }
 
 .main-form__item-contacts input {
+  outline: none;
+  position: relative;
+  height: 55px;
   @media @tablet-widths {
-    width: 90%;  
+    width: 85%;  
   }
   @media @desktop-widths {
     width: 100%;    
   }    
+}
+
+.main-form__item-contacts input:hover {
+  border-color: @dark-gray;
+}
+
+.main-form__item-contacts input:active {
+  border-color: @red;
+}
+
+.main-form__item-contacts input::after {
+  display: none;
+  content: "";
+  position: absolute;  
+  cursor: pointer;
+  left: 0px;
+  top: 0px;  
+  width: 60px;
+  height: 60px;
+  box-sizing: border-box;  
+  background-color: @tbl-gray;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  @media @tablet-widths {
+    display: block;   
+  }
+  @media @desktop-widths {
+    display: block;      
+  } 
 }
 
 .main-form__cover-emotions {  
@@ -215,10 +352,6 @@
   @media @desktop-widths {
     margin: 0 10px;
   }
-}
-
-.main-form__cover-emotions label {
-  color: @red;
 }
 
 .main-form__cover-emotions input { 
@@ -239,6 +372,7 @@
 }
 
 .main-form__cover-textarea {
+  outline: none;
   @media @tablet-widths {
     width: 500px;
     margin: 40px auto;
@@ -247,6 +381,14 @@
     width: 820px;
     margin: 35px auto;  
   }    
+}
+
+.main-form__cover-textarea:hover {
+  border-color: @dark-gray;   
+}
+
+.main-form__cover-textarea:active {
+  border-color: @red;    
 }
 
 .main-form__emotions-btn {
