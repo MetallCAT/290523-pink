@@ -82,6 +82,8 @@
 
 .main-form__item-user input {  
   outline: none;
+  border-color: @tbl-gray;
+  border-style: solid;
 }
 
 .main-form__item-user input:hover {
@@ -306,12 +308,14 @@
 .main-form__item-contacts input {
   outline: none;
   position: relative;
-  height: 55px;
+  height: 57px;
+  border-color: @tbl-gray;
+  border-style: solid;
   @media @tablet-widths {
     width: 85%;  
   }
   @media @desktop-widths {
-    width: 100%;    
+    width: 65%;      
   }    
 }
 
@@ -323,24 +327,26 @@
   border-color: @red;
 }
 
-.main-form__item-contacts input::after {
-  display: none;
-  content: "";
-  position: absolute;  
-  cursor: pointer;
-  left: 0px;
-  top: 0px;  
-  width: 60px;
-  height: 60px;
-  box-sizing: border-box;  
+.main-form__contacts-input {
+  display: flex;  
+}
+
+.main-form__contacts-svg {
+  display: none;  
+  width: 63px;
+  height: 63px;
   background-color: @tbl-gray;
-  background-image: url("../img/icon-phone.svg");
-  background-repeat: no-repeat;
+  cursor: pointer;
+  box-sizing: border-box;
   @media @tablet-widths {
-    display: block;   
+    display: flex;
+    justify-content: center;
+    align-items: center;    
   }
   @media @desktop-widths {
-    display: block;      
+    display: flex;
+    justify-content: center;
+    align-items: center;    
   } 
 }
 
@@ -373,6 +379,8 @@
 
 .main-form__cover-textarea {
   outline: none;
+  border-color: @tbl-gray;
+  border-style: solid;
   @media @tablet-widths {
     width: 500px;
     margin: 40px auto;
