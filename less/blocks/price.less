@@ -1,28 +1,88 @@
 .price {
   width: 100%;
-  margin-top: 130px;
+  margin-top: 40px;
+  padding-bottom: 100px;
+  padding-top: 90px;
   background-color: @light-gray;
+  @media @tablet-widths {
+    padding-bottom: 70px;  
+  }
+  @media @desktop-widths {
+    padding-top: 150px;
+    padding-bottom: 95px;  
+  }
 }
 
 .price__wrapper {
-  .container();
+  .container();  
+}
+
+.price__items {
+  width: 100%;
+  margin-left: -390px;
+  @media @tablet-widths {
+    margin-left: 0;    
+  }
+  @media @desktop-widths {
+    margin-left: 0;   
+  }
+}
+
+.price__item {   
+  position: relative;  
+}
+
+.price__item-wrapper {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+  width: 276px;
+  box-sizing: border-box;
+  @media @tablet-widths {
+    width: 152px;    
+  }
+  @media @desktop-widths {
+    width: 235px;   
+  }
+}
+
+.price__item:first-child {
+  background: @light-gray;  
+}
+
+.price__item:nth-child(3)::before {  
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 74px;
+  height: 73px;
+  background: url(../img/bg-hit.svg);
+  background-repeat: no-repeat;
+  @media @tablet-widths {
+    left: 0;
+  }
+  @media @desktop-widths {
+    left: 0; 
+  }
 }
 
 .price__title {  
   background-color: @dark-gray;
   color: @white;
   text-align: center;
+  text-transform: uppercase;  
 }
 
 .price__name {  
   font-size: 18px;
-  .fonts-bold();
+  .fonts-bold();  
 }
 
 .price__USD {
-  font-size: 24px;  
+  font-size: 24px;
+  .fonts-light();  
 }
 
 .price__td {  
@@ -30,6 +90,34 @@
   padding-top: 22px;
   padding-left: 24px;
   padding-bottom: 23px;
-  font-size: 18px;
+  padding-right: 17px;
   background-color: @white;
+  @media @tablet-widths {
+   padding: 15px 15px; 
+  }
+  @media @desktop-widths {
+    padding: 22px 24px;
+    font-size: 18px;
+  }
+}
+
+.price__td-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media @tablet-widths {
+    justify-content: center;    
+  }
+  @media @desktop-widths {
+    justify-content: center;     
+  } 
+}
+
+.price__span {
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: none;    
+  }  
 }
