@@ -1,13 +1,22 @@
 .main-nav {
   width: 100%;
-  display: none;
+  background-color: @dark-gray;  
   @media @desktop-widths {
-    display: flex;    
+    display: flex;
+    background-color: transparent;
   }
 }
 
 .main-nav__wrapper {
-  .container();  
+  .container();
+  outline: 1px solid red;
+  margin-top: -20px;
+  @media @tablet-widths {    
+    margin-top: -16px;   
+  } 
+  @media @desktop-widths {
+    margin-top: 0;
+  }
 }
 
 .main-nav__items {
@@ -33,15 +42,18 @@
   line-height: 32px;    
   border-top: 1px solid @gray-blue;
   border-bottom: 1px solid @black;
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 16px;
+  padding-bottom: 14px;
   text-align: center;  
   @media @desktop-widths {
     font-weight: normal;    
     padding-top: 48px;
     padding-bottom: 44px;
     font-weight: 18px;
-    border: none;    
+    line-height: 18px;
+    border: none;
+    margin-top: 22px;
+    margin-left: 10px;
   }
 }
 

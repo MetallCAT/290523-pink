@@ -1,6 +1,5 @@
 .price {
-  width: 100%;
-  margin-top: 40px;
+  width: 100%;  
   padding-bottom: 100px;
   padding-top: 90px;
   background-color: @light-gray;
@@ -8,8 +7,10 @@
     padding-bottom: 70px;  
   }
   @media @desktop-widths {
-    padding-top: 150px;
-    padding-bottom: 95px;  
+    padding-top: 125px;
+    padding-bottom: 95px;
+    background-image: url(../img/bg-triangle-white.svg);    
+    background-repeat: no-repeat;    
   }
 }
 
@@ -18,18 +19,16 @@
 }
 
 .price__items {
+  border-collapse: collapse;
   width: 100%;
   margin-left: -390px;
   @media @tablet-widths {
     margin-left: 0;    
   }
   @media @desktop-widths {
-    margin-left: 0;   
+    margin-left: 9px;
+    width: 941px;
   }
-}
-
-.price__item {   
-  position: relative;  
 }
 
 .price__item-wrapper {
@@ -37,18 +36,33 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px 0;
+  padding-top: 16px;
   width: 276px;
   box-sizing: border-box;
   @media @tablet-widths {
     width: 152px;    
+    padding-left: 15px;
   }
   @media @desktop-widths {
-    width: 235px;   
+    width: 196px;    
+    padding-top: 16px;
+    padding-left: 41px;    
   }
 }
 
+.price__item {   
+  position: relative; 
+  border-right: 2px solid @light-gray;
+  border-radius: 2px;
+}
+
 .price__item:first-child {
-  background: @light-gray;  
+  background: @light-gray;
+  border: none;
+}
+
+.price__item:last-child {
+  border-right: none;
 }
 
 .price__item:nth-child(3)::before {  
@@ -86,18 +100,19 @@
 }
 
 .price__td {  
-  border: 1px solid @tbl-gray;
-  padding-top: 22px;
+  border: 2px solid @tbl-gray;
+  /*padding-top: 22px;
   padding-left: 24px;
   padding-bottom: 23px;
-  padding-right: 17px;
+  padding-right: 17px;*/
+  padding: 14px 24px;
   background-color: @white;
   @media @tablet-widths {
-   padding: 15px 15px; 
+    padding: 15px 15px; 
   }
   @media @desktop-widths {
-    padding: 22px 24px;
-    font-size: 18px;
+    padding: 14px 24px;
+    font-size: 18px;    
   }
 }
 
@@ -109,7 +124,7 @@
     justify-content: center;    
   }
   @media @desktop-widths {
-    justify-content: center;     
+    justify-content: center;    
   } 
 }
 

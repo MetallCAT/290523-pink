@@ -109,11 +109,20 @@
         <section class="application">
           <div class="application__wrapper">            
             <div class="application__image">
-              <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="ifone-hand"> 
+              <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="ifone-hand">
+              <!--<picture>
+              <source media="(min-width: 960px)" srcset="img/ 1x, img/ 2x">
+              <source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
+              <img class="application__image-iphone-hand" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="application__image-iphone-hand">
+            </picture>-->
             </div>
-            <h2 class="application__h">Взгляните на жизнь иначе!</h2>
+            <div class="application__title-wrapper">
+              <h2 class="application__title">Взгляните</h2>
+              <h2 class="application__title">на жизнь</h2>
+              <h2 class="application__title">иначе!</h2>
+            </div>
             <div class="application__download">
-              <a class="application__a" href="#">Скачать приложение</a>
+              <a class="application__link" href="#">Скачать приложение</a>
               <div class="application__logotips">
                 <a class="application__logotip" href="#">
                   <svg class="apple" width="46.21px" height="56.753px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-apple"></use></svg>
@@ -125,18 +134,21 @@
                   <svg class="microsoft" width="43.922px" height="41.992px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-microsoft"></use></svg>
                 </a>
               </div>
-              <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+              <p class="application__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
             </div>            
           </div>
         </section>
       </div>
     </header>
-    <main class="main">      
-      <section class="advantage">
-        <div class="advantage__captions">
-          <h2 class="advantage__caption">Устали от серости мегаполиса?</h2>
-          <h2 class="advantage__caption">Нам есть, что вам  предложить!</h2>
+    <main class="main">
+      <div class="main__captions-wrapper">
+        <div class="main__captions">
+          <h2 class="main__caption">Устали от серости мегаполиса?</h2>
+          <h2 class="main__caption">Нам есть, что вам</h2>
+          <h2 class="main__caption" class="">предложить!</h2>
         </div>
+      </div>
+      <section class="advantage">        
         <div class="advantage__wrapper">          
           <div class="advantage__centre">
             <div class="advantage__items">
@@ -196,13 +208,16 @@
               <g>
                 <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
               </g>
-            </svg>           
-            <b class="comment__name">Николай Петров</b>
+            </svg>
+            <div class="comment__user">
+              <b class="comment__name">Николай Петров</b>
+              <span class="comment__profession">25 лет, водитель травмая</span>
+            </div>
             <div class="comment__content-wrapper">
               <span class="comment__bkt-left">
                 <svg class="bkt-left" width="21.706px" height="41.719px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bkt-left"></use></svg>
               </span>
-              <p class="comment__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>           
+              <p class="comment__content"><span class="comment__hidden">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="comment__hidden">»</span></p>           
               <span class="comment__bkt-right">
                 <svg class="bkt-right" width="21.706px" height="41.719px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-bkt-right"></use></svg>
               </span>
@@ -220,7 +235,7 @@
           <table class="price__items">
             <tbody>
             <tr class="price__title">
-              <th class="price__item">
+              <th class="price__item">                
               </th>
               <th class="price__item">
                 <div class="price__item-wrapper">
@@ -310,9 +325,11 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">       
-        <h2 class="footer__title">Остались вопросы?</h2>
-        <h2 class="footer__title">Свяжитесь с нами!</h2>
+      <div class="footer__wrapper">
+        <div class="footer__title-wrapper">
+          <h2 class="footer__title">Остались вопросы?</h2>
+          <h2 class="footer__title">Свяжитесь с нами!</h2>
+        </div>
         <div class="footer__list">
           <div class="footer__item">
             <span class="footer__tout">Звоните:</span>

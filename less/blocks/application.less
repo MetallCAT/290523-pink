@@ -10,18 +10,20 @@
   @media @tablet-widths {    
     align-items: flex-start;
     background-image: url(../img/iphone-hand-tablet@1x.png);
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: -20px 76px;
   }
   @media @desktop-widths {
     align-items: flex-start;
     background-image: url(../img/iphone-hand-desktop@1x.png);
-    background-position: right;    
+    background-repeat: no-repeat;
+    background-position: 28px 93px;    
   }
 }
 
 .application__image {
   display: flex;
-  margin-top: 92px;
+  margin-top: 110px;
   @media @tablet-widths {    
     display: none;
   }
@@ -30,22 +32,33 @@
   }
 }
 
-.application__h {
-  width: 240px;
-  .fonts-light();
+.application__title-wrapper {  
+  width: 240px;  
   display: none;
-  text-align: center;
+  text-align: center;  
+  @media @tablet-widths {    
+    display: block;    
+    margin-top: 78px;
+    margin-left: 50px;
+    margin-bottom: -11px;
+  }
+  @media @desktop-widths {    
+    display: block;  
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 0;
+  } 
+}
+
+.application__title {
+  .fonts-light();  
   @media @tablet-widths {
     font-size: 40px;
-    display: flex;    
-    margin-top: 70px;
-    margin-left: 15px;
+    line-height: 14px;    
   }
   @media @desktop-widths {
     font-size: 50px;
-    display: flex;    
-    margin-top: 100px;
-    margin-left: 35px;
+    line-height: 20px;
   }    
 }
 
@@ -62,8 +75,8 @@
   }
 }
 
-.application__a {
-  width: 205px;  
+.application__link {
+  width: 223px;  
   padding: 15px 25px;  
   font-size: 18px;
   line-height: 18px;
@@ -72,52 +85,70 @@
   border-radius: 30px;
   cursor: pointer;
   color: @white;
+  text-align: center;
   background-color: @dark-blue;  
   margin-top: 28px;
   text-decoration: none;
   @media @tablet-widths {   
-    background-color: transparent; 
+    background-color: transparent;
+    width: 243px;
+    margin-left: 20px;
   }
   @media @desktop-widths {   
-    background-color: transparent;  
+    background-color: transparent;
+    width: 243px;
+    margin-left: 10px;
+    font-size: 21px;
   }
 }
 
-.application__a:hover {
+.application__link:hover {
   background-color: @white; 
   color: @red;    
 }
 
-.application__a:active {
+.application__link:active {
   background-color: @white; 
   color: @red;
   opacity: 0.3;
 }
 
-.application__logotips {
+.application__logotips {  
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   width: 205px;  
   margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.application__logotip {
-  height: 47px;
-  width: 47px;
-  align-self: center;
+  @media @tablet-widths {   
+    margin-top: 45px;
+    margin-left: 18px;
+    margin-bottom: 8px;
+  }
+  @media @desktop-widths {   
+    margin-top: 67px;
+    margin-left: 13px;
+    margin-bottom: 28px;
+  }
 }
 
 .application__description {
   width: 230px;
   .fonts-light();
   line-height: 24px;  
-  padding-bottom: 35px;
+  padding-bottom: 15px;  
   text-align: center;
   @media @tablet-widths {   
-    margin-bottom: 65px;  
+    margin-bottom: 65px;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 20px;
+    padding-bottom: 45px;
   }
   @media @desktop-widths {   
-    margin-bottom: 125px;    
+    margin-bottom: 87px;
+    margin-left: 8px;
+    font-size: 18px;
+    width: 300px;
+    padding-bottom: 35px;
   } 
 }
