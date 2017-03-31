@@ -1,6 +1,10 @@
 .post {    
   width: 100%;
+  outline: 1px solid red;
   background-color: @light-gray;
+  @media @desktop-widths {    
+               
+  }
   @media @desktop-widths {    
     background-color: @white;         
   }
@@ -11,7 +15,7 @@
   display: flex;
   flex-direction: column;
   @media @tablet-widths {    
-    flex-direction: row;       
+    flex-direction: row;    
   }
   @media @desktop-widths {    
     flex-direction: row;
@@ -23,8 +27,7 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  @media @tablet-widths {    
-    padding-bottom: 35px;
+  @media @tablet-widths {   
     width: 280px;
   }
   @media @desktop-widths {    
@@ -34,11 +37,13 @@
 }
 
 .post__box-top {
+  outline: 1px solid red;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
   @media @tablet-widths {    
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
+    margin-top: 39px;
   }
   @media @desktop-widths {    
     flex-direction: row;
@@ -51,17 +56,21 @@
   width: 280px;
   height: 375px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 20px;  
   @media @tablet-widths {    
     width: 300px;
     height: 400px;
     margin-top: 57px;
     margin-bottom: 54px;
+    margin-left: 20px;
+    margin-right: 38px;
   }
   @media @desktop-widths {    
     width: 300px;
     height: 400px;
-    margin-top: 52px;
+    margin-top: 56px;
+    margin-left: 90px;
+    margin-right: 60px;
   } 
 }
 
@@ -69,21 +78,46 @@
   cursor: pointer;
   display: flex;  
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
   width: 198px;  
-  margin: 35px auto;
+  margin-top: 39px;
+  margin-left: 54px;
   @media @tablet-widths {    
-    flex-direction: column;   
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 15px;
   }
   @media @desktop-widths {    
-    flex-direction: column;     
+    flex-direction: column;
+    margin-top: 0;
   } 
+}
+
+.post__photo-tuning svg {
+  @media @tablet-widths {    
+    width: 22px;
+    height: 22px;
+    margin-bottom: 50px;
+  }
+  @media @desktop-widths {    
+    width: 48px;
+    height: 48px;
+    margin-bottom: 30px;
+    margin-right: 14px;
+  }   
 }
 
 .post__scale-group {
   display: flex;
   flex-direction: column;  
-  justify-content: space-between;  
+  justify-content: space-between;
+  margin-top: 37px;
+  @media @tablet-widths {    
+    margin-right: 15px;  
+  }
+  @media @desktop-widths {    
+    margin-right: 0px;  
+  }
 }
 
 .post__scale {
@@ -94,9 +128,9 @@
   margin: auto;
   margin-bottom: 30px;
   @media @tablet-widths {    
-    width: 205px;
+    width: 203px;
+    margin-bottom: 70px;
   }
-
   @media @desktop-widths {    
     width: 290px;
   }
@@ -131,9 +165,31 @@
   border: 2px solid @red;
   border-radius: 50%;
   top: -6px;
-  left: 70%;
+  left: 80%;
   z-index: 1;
-  cursor: pointer;   
+  cursor: pointer;
+  @media @tablet-widths {
+    &--crop {
+      left: 72%;
+    }
+    &--fill {
+      left: 12%;
+    }
+    &--contrast {
+      left: 48%;
+    }
+  }
+  @media @desktop-widths {
+    &--crop {
+      left: 25%;
+    }
+    &--fill {
+      left: 86%;
+    }
+    &--contrast {
+      left: 56%;
+    }
+  }
 }
 
 .post__range:active {
@@ -153,19 +209,26 @@
   } 
 }*/
 
-.post__button {  
+.post__button {
+  outline: 1px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;  
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 41px;
+  margin-top: 43px;
+  font-size: 18px;
+  line-height: 18px;
+  .fonts-bold();
   @media @tablet-widths {    
-    margin-top: 20px;          
+    margin-top: 31px;        
   }
   @media @desktop-widths {  
     flex-direction: row;
     justify-content: space-between;    
-    margin-top: 80px;
+    margin-top: 90px;
+    margin-left: 30px;
+    width: 410px;
   } 
 }
 
@@ -176,16 +239,15 @@
   border: 3px solid @red;
   border-radius: 30px;
   background-color: @light-gray;
-  color: @red;
-  font-size: 18px;
-  line-height: 18px;
+  color: @red;  
   cursor: pointer;
   @media @tablet-widths {    
-    width: 260px;      
+    width: 260px;
+    margin-bottom: 23px;
   }
   @media @desktop-widths {    
     width: 184px;
-    margin-top: 12px;
+    margin-top: 18px;    
   } 
 }
 
@@ -206,15 +268,14 @@
   border: 3px solid @dark-gray;
   border-radius: 30px;
   opacity: 0.1;
-  background-color: @light-gray;
-  font-size: 18px;
-  line-height: 18px;
+  background-color: @light-gray;  
   cursor: pointer;
   @media @tablet-widths {    
     width: 260px;      
   }
   @media @desktop-widths {    
-    width: 184px;     
+    width: 184px;
+    
   } 
 }
 

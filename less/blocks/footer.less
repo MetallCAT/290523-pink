@@ -113,11 +113,12 @@
   outline: 2px solid blue;
   @media @tablet-widths {
     flex-direction: row;
-    align-content: space-between;
+    margin-top: -4px;
+    margin-bottom: 42px;    
   }
   @media @desktop-widths {   
     flex-direction: row;
-    align-content: space-between;
+    margin-top: 15px;
   }  
 }
 
@@ -136,6 +137,10 @@
 }
 
 .footer__logo {
+  @media @tablet-widths {   
+    margin-left: 20px;
+    margin-top: -4px;
+  }
   @media @desktop-widths {   
     margin-left: 10px;
   }     

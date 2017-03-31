@@ -17,8 +17,17 @@
 }
 
 .main-photos__display {
+  outline: 1px solid orange;
   width: 100%;
   position: relative;
+  margin-top: 3px;
+  height: 137px;
+  @media @tablet-widths {
+    height: 509px;     
+  }
+  @media @desktop-widths {
+    height: 506px;  
+  }
 }
 
 .main-photos__panorama-day {  
@@ -45,18 +54,19 @@
   } 
 }
 
-.main-photos__panorama-p {  
-  padding: 0;  
+.main-photos__panorama-text {  
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .main-photos__about-panorama {
+  outline: 1px solid red;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  position: relative;
   height: 192px;
-  margin: 0 20px;
-  padding: 0 14px;
-  padding-bottom: 25px;
+  margin: 0 16px;
+  padding: 0 14px;  
   background-color: @light-gray;
   line-height: 24px;
   @media @tablet-widths {
@@ -71,33 +81,87 @@
   } 
 }
 
+.main-photos__author {
+  .fonts-bold();
+  font-size: 14px;
+  margin-top: 17px;
+  margin-left: 7px;
+  outline: 1px solid black;
+  @media @tablet-widths {
+    margin-top: 23px;
+  margin-left: 7px;  
+  }
+  @media @desktop-widths {
+    
+  }  
+}
+
+.main-photos__comment {
+  outline: 1px solid blue;
+  height: 95px;
+  margin-top: -10px;
+  margin-left: 6px;  
+}
+
 .main-photos__like-wrapper {
+  outline: 1px solid green;
   display: flex;
   align-items: center;
+  margin-top: -3px;
+  margin-left: 3px;  
   @media @tablet-widths {
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-start;
+    position: absolute;
+    top: 27px;
+    right: 37px;
   }
   @media @desktop-widths {
     flex-direction: row-reverse;
     justify-content: flex-start;
+    position: absolute;
+    top: 27px;
+    right: 41px;
   }      
 }
 
 .main-photos__title {
   align-self: center;
   margin: 0;
-  padding: 50px 37px;
-  text-align: center;  
+  padding: 46px 37px;
+  text-align: center;
+  @media @tablet-widths {    
+    font-size: 18px;
+    width: 438px;
+    margin: 0 auto;
+    margin-top: 47px;
+    margin-bottom: 30px;
+  }
+  @media @desktop-widths {
+    width: 575px;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-photos__epilog {
   .container();
-  text-align: center; 
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 42px;
+  @media @tablet-widths {
+    margin-top: 95px;
+    margin-bottom: 68px;
+  }
+  @media @desktop-widths {
+    margin-top: 60px;
+    margin-bottom: 68px;
+  }
 }
 
 .main-photos__epilogP { 
   padding: 0 32px;
+  margin: 0;
   @media @tablet-widths {
     font-size: 18px;    
   }

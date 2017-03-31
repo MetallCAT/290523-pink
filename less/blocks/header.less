@@ -126,31 +126,35 @@
   }    
 }
 
-.header__title {     
+.header__title-wrapper {  
   text-align: center;
   padding-top: 0;
   padding-bottom: 53px;
   padding-left: 27px;
   padding-right: 27px;
   @media @tablet-widths {
-    padding-top: 0;
-    padding-bottom: 79px;
+    padding-top: 43px;
+    padding-bottom: 115px;
     padding-left: 77px;
     padding-right: 74px;    
   }
-  @media @desktop-widths {
-    padding-top: 0;
-    padding-bottom: 100px;
-    padding-left: 42px;
-    padding-right: 39px;    
+  @media @desktop-widths {    
+    width: 350px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 77px;
   }
 }
 
-.header__h1 {
+.header__title {
+  outline: 1px solid yellow;
   font-size: 24px;
   .fonts-light();
+  margin-top: 31px;
+  margin-bottom: 26px;
   @media @tablet-widths {
-    font-size: 50px;        
+    font-size: 50px;
+    line-height: 58px;    
   }
   @media @desktop-widths {
     font-size: 50px;        
