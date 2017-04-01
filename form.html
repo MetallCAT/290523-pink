@@ -106,15 +106,15 @@
             </ul>            
           </div>    
         </nav>        
-        <div class="header__title-wrapper">
-          <h1 class="header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="header__title-wrapper header__title-form-wrapper">
+          <h1 class="header__title-form">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </div>
     </header>
     <main class="main-form">
       <div class="main-form__wrapper">
         <form class="main-form__full-name" method="post" action="https://echo.htmlacademy.ru/">
-          <p class="main-form__cover-paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <p class="main-form__cover-paragraph">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="main-form__paragraph-hidden">Пожалуйста, заполните форму ниже:</span></p>
           <div class="main-form__cover-wrapper">
             <div class="main-form__cover-user">
               <div class="main-form__user-wrapper">
@@ -134,7 +134,7 @@
             </div>          
             <div class="main-form__cover-app">
               <div class="main-form__app-wrapper">
-                <h2 class="main-form__cover-title">С каким приложением путешествовали?</h2>
+                <h2 class="main-form__app-title">С каким приложением путешествовали?</h2>
                 <div class="main-form__item-app">    
                   <input id="ios" type="radio" name="apposition" value="ios" checked>
                   <label for="ios">Pink для iOS</label>
@@ -149,10 +149,11 @@
                 </div>
               </div>
             </div>
-          </div>          
+          </div>
+          <div class="main-form__achiev-contacts">
           <div class="main-form__cover-achiev">
             <div class="main-form__achiev-wrapper">
-              <h2 class="main-form__cover-title">Ваши безбашенные достижения в путешествии</h2>
+              <h2 class="main-form__achiev-title">Ваши безбашенные достижения в путешествии</h2>
               <div class="main-form__items-achiev">
                 <div class="main-form__item-achiev">
                   <input id="shark" type="checkbox" name="progress" value="shark" checked>
@@ -168,7 +169,7 @@
                 </div>
                 <div class="main-form__item-achiev">
                   <input id="souvenir" type="checkbox" name="progress" value="souvenir">
-                  <label for="souvenir">накупил сувениров</label>
+                  <label for="souvenir">Накупил сувениров</label>
                 </div>
                 <div class="main-form__item-achiev">
                   <input id="tower" type="checkbox" name="progress" value="tower" checked>
@@ -181,7 +182,7 @@
               </div>
             </div>
           </div>
-          <h2 class="main-form__cover-title">Контактная информация</h2>
+          <h2 class="main-form__contacts-title">Контактная информация</h2>
           <div class="main-form__cover-contacts">
             <div class="main-form__contacts-wrapper">
               <div class="main-form__item-contacts">
@@ -203,16 +204,34 @@
                 </div>
               </div>
             </div>
-          </div>         
+          </div>
+          </div>
+          <div class="main-form__cover-app-mobile">
+            <div class="main-form__app-wrapper">
+              <h2 class="main-form__app-title">С каким приложением путешествовали?</h2>
+              <div class="main-form__item-app">    
+                <input id="ios" type="radio" name="apposition" value="ios" checked>
+                <label for="ios">Pink для iOS</label>
+              </div>
+              <div class="main-form__item-app">
+                <input id="android" type="radio" name="apposition" value="android">
+                <label for="android">Pink на Android</label>
+              </div>
+              <div class="main-form__item-app">
+                <input id="windows-phone" type="radio" name="apposition" value="windows-phone">
+                <label for="windows-phone">Windows Phone</label>
+              </div>
+            </div>
+          </div>
           <div class="main-form__cover-emotions">
             <div class="main-form__emotions-wrapper">
               <div class="main-form__emotions-top">
-                <h2 class="main-form__cover-title">Опишите свои эмоции</h2>
-                <textarea class="main-form__cover-textarea" cols="25" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                <h2 class="main-form__emotions-title">Опишите свои эмоции</h2>
+                <textarea class="main-form__cover-textarea" cols="25" rows="12" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
               <div class="main-form__emotions-btn">
                 <button class="main-form__btn" type="submit">Отправить форму</button>
-                <span class="main-form__needed"><sup>*</sup> - Обязательные поля</span>
+                <span class="main-form__needed"><sup>*</sup> — Обязательные поля</span>
               </div>
             </div>
           </div>

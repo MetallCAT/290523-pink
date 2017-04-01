@@ -33,13 +33,15 @@
   margin-top: 52px;
   @media @tablet-widths {
     margin-top: 70px;
-    padding-bottom: 0;    
+    padding-bottom: 0;
+    text-align: left;
   }
   @media @desktop-widths {
     flex-direction: row;
     justify-content: space-around;
     padding-bottom: 0;
     margin-top: 50px;
+    text-align: center;
   }
 }
 
@@ -75,6 +77,9 @@
   padding: 0 23px;
   margin: 0 auto;
   margin-top: 9px;
+  @media @tablet-widths {
+  padding: 0;    
+  }
   @media @desktop-widths {
     font-size: 18px;
     line-height: 30px;
