@@ -1,16 +1,18 @@
 .main-nav {
   width: 100%;
-  
+  display: none;
   background-color: @dark-gray;  
   @media @desktop-widths {
     display: flex;
-    background-color: transparent;
+    background-color: transparent;     
+    position: absolute;
+    top: -25px;
+    left: 320px;  
   }
 }
 
 .main-nav__wrapper {
-  .container();
-  outline: 1px solid red;
+  .container();  
   margin-top: -20px;
   @media @tablet-widths {    
     margin-top: -16px;   

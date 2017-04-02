@@ -50,7 +50,7 @@
   }
 }
 
-.main-form__cover-user {                       /*user*/
+.main-form__cover-user {                       
   padding-top: 35px;
   padding-bottom: 27px;
   margin: 0 20px;  
@@ -146,7 +146,7 @@
   }    
 }
 
-.main-form__cover-app {                               /*app*/
+.main-form__cover-app {                               
   display: none;   
   background-color: @light-gray;  
   @media @tablet-widths {
@@ -217,22 +217,17 @@
   }
 }
 
-.main-form__item-app {
-  outline: 1px solid orange;
+.main-form__item-app {  
   margin-bottom: 45px;
   margin-left: 38px;
   font-size: 18px;
   @media @tablet-widths {    
     margin-bottom: 45px;
     margin-left: 22px;
-  }
-  @media @desktop-widths {    
-     
-  }
+  }  
 }
 
-.main-form__item-app label {
-  outline: 1px solid red;
+.main-form__item-app label {  
   position: relative;
   margin-left: 51px;  
   @media @tablet-widths {
@@ -300,7 +295,7 @@
   }
 }
 
-.main-form__cover-achiev {                              /*achiev*/
+.main-form__cover-achiev {                              
   background-color: @light-gray;  
   @media @tablet-widths {
     background-color: @white;
@@ -468,7 +463,7 @@
   }
 }
 
-.main-form__cover-contacts {                           /*contacts*/
+.main-form__cover-contacts {                          
   padding-top: 32px;
   padding-bottom: 25px;
   margin: 0 20px; 
@@ -538,13 +533,13 @@
   } 
   @media @desktop-widths {
     flex-direction: row;
-    display: flex;    
-    margin-top: 38px;    
+    display: flex;  
+    margin-top: 38px;
+    width: 100%;
   }
 }
 
-.main-form__item-contacts {
-  outline: 1px solid red;
+.main-form__item-contacts {  
   display: flex;
   flex-direction: column;  
   margin-bottom: 17px;  
@@ -556,8 +551,8 @@
   }
   @media @desktop-widths {
     flex-direction: column-reverse;
-    width: 470px;    
-    padding-bottom: 13px;
+    width: 435px;    
+    padding-bottom: 13px;    
   }
 }
 
@@ -567,6 +562,12 @@
     margin-left: 78px;
     margin-top: 10px;
   }        
+}
+
+.main-form__item-contacts:last-child {
+  @media @desktop-widths {
+    margin-left: 10px;      
+  }       
 }
 
 .main-form__item-contacts input {
@@ -584,8 +585,9 @@
     margin-left: 58px;
     margin-top: 3px;
   }
-  @media @desktop-widths {
-    width: 63%;
+  @media @desktop-widths {    
+    width: 70%;
+    margin-left: 60px;
   }    
 }
 
@@ -618,12 +620,12 @@
   @media @desktop-widths {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: 34px;
+    align-items: center;    
+    margin-right: 0;    
   } 
 }
 
-.main-form__cover-emotions {                          /*emotions*/
+.main-form__cover-emotions {                          
   padding-top: 27px;  
   padding-bottom: 17px;
   margin: 0 20px;

@@ -1,15 +1,11 @@
 .comment {
   width: 100%;  
   text-align: center;
-  margin-bottom: 74px;
-  /*margin-top: 21px;*/
+  margin-bottom: 74px;  
   margin-top: 5px;
   @media @tablet-widths {    
     margin-bottom: 0;     
-  }
-  @media @desktop-widths {    
-    margin-bottom: 0;
-  }
+  }  
 }
 
 .comment__wrapper {
@@ -19,16 +15,12 @@
   align-items: center;  
 }
 
-.comment__text {
-  outline: 1px solid green;
+.comment__text {  
   display: flex;
   flex-direction: column;
   @media @tablet-widths {    
     flex-direction: column-reverse;    
-  }
-  @media @desktop-widths {    
-    flex-direction: column-reverse;   
-  }
+  }  
 }
 
 .comment__top-svg {
@@ -40,8 +32,7 @@
   }
 }
 
-.comment__user {
-  outline: 1px solid orange;
+.comment__user {  
   display: flex;
   flex-direction: column;  
   background-color: @white;
@@ -88,8 +79,7 @@
   }
 }
 
-.comment__content {
-  outline: 1px solid blue;
+.comment__content {  
   padding: 0 21px;
   @media @tablet-widths {    
     font-size: 18px;
@@ -134,4 +124,3 @@
     display: none;
   }
 }
-
