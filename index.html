@@ -111,10 +111,10 @@
             <div class="application__image">
               <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="ifone-hand">
               <!--<picture>
-              <source media="(min-width: 960px)" srcset="img/ 1x, img/ 2x">
-              <source media="(min-width: 660px)" srcset="img/ 1x, img/ 2x">
-              <img class="application__image-iphone-hand" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="application__image-iphone-hand">
-            </picture>-->
+                <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <img class="application__image-iphone-hand" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="application__image-iphone-hand">
+              </picture>-->
             </div>
             <div class="application__title-wrapper">
               <h2 class="application__title">Взгляните</h2>
@@ -145,7 +145,7 @@
         <div class="main__captions">
           <h2 class="main__caption">Устали от серости мегаполиса?</h2>
           <h2 class="main__caption">Нам есть, что вам</h2>
-          <h2 class="main__caption" class="">предложить!</h2>
+          <h2 class="main__caption">предложить!</h2>
         </div>
       </div>
       <section class="advantage">        
@@ -211,7 +211,7 @@
             </svg>
             <div class="comment__user">
               <b class="comment__name">Николай Петров</b>
-              <span class="comment__profession">25 лет, водитель травмая</span>
+              <span class="comment__profession">25 лет, водитель трамвая</span>
             </div>
             <div class="comment__content-wrapper">
               <span class="comment__bkt-left">
@@ -223,11 +223,11 @@
               </span>
             </div>
           </div>
-          <!--<div class="comment__slider">
-            <label class="slider__toggle" for="comment-input-1">1</label>
-            <label class="slider__toggle" for="comment-input-2">2</label>
-            <label class="slider__toggle" for="comment-input-3">3</label>
-          </div>-->
+          <div class="comment__slider">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>      
       <section class="price">
@@ -320,11 +320,16 @@
               </td>
             </tr>
             </tbody>
-          </table>          
+          </table>
+          <div class="price__slider">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer">   
       <div class="footer__wrapper">
         <div class="footer__title-wrapper">
           <h2 class="footer__title">Остались вопросы?</h2>
@@ -333,7 +338,7 @@
         <div class="footer__list">
           <div class="footer__item">
             <span class="footer__tout">Звоните:</span>
-            <a class="footer__ref" href="#">7(812)5556666</a>
+            <a class="footer__ref" href="#">+7 (812) 555-66-66</a>
           </div>        
           <div class="footer__item">
             <span class="footer__tout">Пишите:</span>
@@ -341,12 +346,21 @@
           </div>       
           <div class="footer__item">
             <span class="footer__tout">Приезжайте в гости:</span>
-            <a class="footer__ref" href="#">Ул.Большая Конюшенная, 19/8</a> 
+            <a class="footer__ref" href="#">ул.Большая Конюшенная, 19/8</a> 
           </div>
-        </div>
-        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6146657631202!2d30.320266216356984!3d59.93853598187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479831590862" width="340" height="612" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        </div>       
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6146657631202!2d30.320266216356984!3d59.93853598187617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca77c663%3A0xe2913435672b14c9!2s21Shop!5e0!3m2!1sru!2sru!4v1479831590862" width="340" height="612" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <!--<div class="footer-map__display">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x 1x, img/bg-map-desktop@2x 2x">
+              <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x 1x, img/bg-map-tablet@2x 2x">
+              <img class="footer-map__image-map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="footer-map__map">
+            </picture>
+          </div>-->
+        </div>        
         <div class="footer__hidden">
-          <div class="footer__wrapper footer__contacts">
+          <div class="footer__wrapper footer__contacts footer__contacts-index">
             <div class="footer__logo">
               <a href="index.html">
                 <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
@@ -405,9 +419,9 @@
                 </svg>
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+          </div>        
+        </div>        
+      </div>      
     </footer>   
   </body>
 </html>

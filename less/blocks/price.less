@@ -1,53 +1,59 @@
 .price {
   width: 100%;  
-  padding-bottom: 100px;
-  padding-top: 90px;
+  padding-bottom: 43px;
+  background-image: url(../img/bg-triangle-white.svg);    
+  background-repeat: no-repeat;  
+  background-size: 100%;
+  padding-top: 57px;
   background-color: @light-gray;
-  @media @tablet-widths {
-    padding-bottom: 70px;  
+  @media @tablet-widths {   
+    padding-bottom: 70px;
+    padding-top: 106px;   
   }
   @media @desktop-widths {
     padding-top: 125px;
-    padding-bottom: 95px;
-    background-image: url(../img/bg-triangle-white.svg);    
-    background-repeat: no-repeat;    
+    padding-bottom: 92px;        
   }
 }
 
 .price__wrapper {
-  .container();  
+  .container();
+  outline: 1px solid blue;
+  @media @tablet-widths {   
+    width: 620px;
+  }
+  @media @desktop-widths {   
+    width: 940px;
+  }
 }
 
-.price__items {
+.price__items {  
   line-height: 1;
-  border-collapse: collapse;
+  border-collapse: collapse;  
   width: 100%;
-  margin-left: -390px;
+  margin-left: -405px;
   @media @tablet-widths {
     margin-left: 0;    
-  }
-  @media @desktop-widths {
-    margin-left: 9px;
-    width: 941px;
-  }
+  }  
 }
 
 .price__item-wrapper {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 20px 0;
-  padding-top: 16px;
+  padding: 22px 0;  
   width: 276px;
+  text-transform: uppercase;
   box-sizing: border-box;
   @media @tablet-widths {
-    width: 152px;    
+    width: 143px;
+    padding: 14px 0;
     padding-left: 15px;
   }
   @media @desktop-widths {
     width: 196px;    
-    padding-top: 16px;
-    padding-left: 41px;    
+    padding: 22px 0;
+    padding-left: 35px;
   }
 }
 
@@ -92,27 +98,37 @@
 
 .price__name {  
   font-size: 18px;
-  .fonts-bold();  
+  .fonts-bold();
+  margin-bottom: 7px;
+  @media @tablet-widths {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
 }
 
 .price__USD {
   font-size: 24px;
-  .fonts-light();  
+  .fonts-light();
+  @media @tablet-widths {
+    font-size: 18px;  
+  }
+  @media @desktop-widths {
+    font-size: 24px;  
+  }
 }
 
 .price__td {  
-  border: 2px solid @tbl-gray;
-  /*padding-top: 22px;
-  padding-left: 24px;
-  padding-bottom: 23px;
-  padding-right: 17px;*/
-  padding: 14px 24px;
+  border: 2px solid @tbl-gray;  
+  padding: 16px 23px;
+  text-transform: uppercase;
   background-color: @white;
   @media @tablet-widths {
-    padding: 15px 15px; 
+    padding: 9px 15px;
+    text-transform: none;
   }
   @media @desktop-widths {
-    padding: 14px 24px;
+    padding: 16px 22px;
+    padding-right: 30px;
     font-size: 18px;    
   }
 }
@@ -136,4 +152,17 @@
   @media @desktop-widths {
     display: none;    
   }  
+}
+
+.price__slider {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  margin-top: 38px;
+  @media @tablet-widths {
+    display: none;
+  }
+  @media @desktop-widths {
+    display: none;
+  }
 }
