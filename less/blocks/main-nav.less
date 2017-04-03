@@ -84,3 +84,14 @@
 .main-nav__active:hover {
   border-bottom: 2px solid @red;
 }
+
+.main-nav--closed {
+  display: none; 
+  @media @desktop-widths {        
+    display: flex;  
+  }
+}
+
+.main-nav--opened {
+  display: flex;  
+}

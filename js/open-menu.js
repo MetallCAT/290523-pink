@@ -10,5 +10,5 @@ toggle.addEventListener("click", function(event) {
   } else {
     navigation.classList.add("main-nav--closed");
     navigation.classList.remove("main-nav--opened");
-  }
+  }    
 });
