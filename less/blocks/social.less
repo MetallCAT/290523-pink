@@ -1,15 +1,50 @@
-.social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;   
-  font-size: 0;
-  width: 177px;  
-  margin: 40px 30px; 
+.social
+{
+    font-size: 0;
+
+    display: flex;
+
+    width: 177px;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    margin-left: -40px;
+
+    justify-content: space-between;
+    align-items: center;
+    @media @tablet-widths
+    {
+        margin: 0;
+        margin-right: 60px;
+    }
+    @media @desktop-widths
+    {
+        margin: 0;
+        margin-top: 5px;
+        margin-right: 27px;
+    }
 }
 
-.social__icons {  
-  width: 45px;
-  height: 45px;
-  border: 3px solid @gray;
-  border-radius: 30px; 
+.social__icons
+{
+    width: 45px;
+    height: 45px;
+
+    border: 3px solid @light-gray;
+    border-radius: 30px;
+}
+
+.social__icons:hover
+{
+    border: 3px solid @dark-gray;
+}
+
+.social__icons:active
+{
+    border: 3px solid @light-gray;
+}
+
+.social__icon svg
+{
+    margin-top: 16px;
+    margin-left: 3px;
 }

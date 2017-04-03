@@ -1,58 +1,221 @@
-.main-photos {
-  width: 100%; 
+.main-photos
+{
+    width: 100%;
 }
 
-.main-photos__items {
-  .container();
-  display: flex;
-  flex-direction: column;
-  justify-content: center; 
-  align-content: flex-start;
-  @media @tablet-widths {
-    flex-flow: row wrap;      
-  }
-  @media @desktop-widths {
-    flex-flow: row wrap;
-  } 
+.main-photos__items
+{
+    display: flex;
+    flex-direction: column;
+
+    .container();
+    justify-content: center;
+    align-content: flex-start;
+    @media @tablet-widths
+    {
+        flex-flow: row wrap;
+    }
+    @media @desktop-widths
+    {
+        flex-flow: row wrap;
+    }
 }
 
-.main-photos__panorama {
-  width: 100%;  
+.main-photos__display
+{
+    position: relative;
+
+    width: 100%;
+    height: 137px;
+    margin-top: 3px;
+    @media @tablet-widths
+    {
+        height: 509px;
+    }
+    @media @desktop-widths
+    {
+        height: 506px;
+    }
 }
 
-.mine-photos__about {
-  margin: 0 20px;
-  padding-left: 17px;
-  padding-bottom: 26px;
-  background-color: @light-gray;
-  line-height: 24px;
-  @media @tablet-widths {
-    width: 620px;    
-  }
-  @media @desktop-widths {
-    width: 940px;
-    margin: 0 10px;
-  } 
+.main-photos__panorama-day
+{
+    font-size: 12px;
+    line-height: 24px;
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    display: flex;
+
+    width: 140px;
+    height: 36px;
+
+    color: @white;
+    background-color: @red;
+
+    justify-content: center;
+    align-items: center;
+    .fonts-bold();
+    @media @tablet-widths
+    {
+        top: 57px;
+        right: 40px;
+    }
+    @media @desktop-widths
+    {
+        top: 54px;
+        right: 130px;
+    }
 }
 
-.main-photos__title {
-  align-self: center;
-  margin: 0;
-  padding: 50px 37px;
-  text-align: center;  
+.main-photos__panorama-text
+{
+    padding: 0;
+
+    text-transform: uppercase;
 }
 
-.main-photos__epilog {
-  .container();
-  text-align: center; 
+.main-photos__about-panorama
+{
+    line-height: 24px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 192px;
+    margin: 0 16px;
+    padding: 0 14px;
+
+    background-color: @light-gray;
+    @media @tablet-widths
+    {
+        width: 580px;
+        height: 121px;
+        margin: 0 auto;
+    }
+    @media @desktop-widths
+    {
+        width: 900px;
+        height: 98px;
+        margin: 0 auto;
+    }
 }
 
-.main-photos__epilogP { 
-  padding: 0 32px;
-  @media @tablet-widths {
-    font-size: 18px;    
-  }
-  @media @desktop-widths {
-    font-size: 18px;
-  } 
+.main-photos__author
+{
+    font-size: 14px;
+
+    margin-top: 17px;
+    margin-left: 7px;
+
+    .fonts-bold();
+    @media @tablet-widths
+    {
+        margin-top: 23px;
+        margin-left: 7px;
+    }
+    @media @desktop-widths
+    {
+    }
+}
+
+.main-photos__comment
+{
+    height: 95px;
+    margin-top: -10px;
+    margin-left: 6px;
+}
+
+.main-photos__like-wrapper
+{
+    display: flex;
+
+    margin-top: -3px;
+    margin-left: 3px;
+
+    align-items: center;
+    @media @tablet-widths
+    {
+        position: absolute;
+        top: 27px;
+        right: 37px;
+
+        flex-direction: row-reverse;
+
+        justify-content: flex-start;
+    }
+    @media @desktop-widths
+    {
+        position: absolute;
+        top: 27px;
+        right: 41px;
+
+        flex-direction: row-reverse;
+
+        justify-content: flex-start;
+    }
+}
+
+.main-photos__title
+{
+    margin: 0;
+    padding: 46px 37px;
+
+    text-align: center;
+
+    align-self: center;
+    @media @tablet-widths
+    {
+        font-size: 18px;
+
+        width: 438px;
+        margin: 0 auto;
+        margin-top: 47px;
+        margin-bottom: 30px;
+    }
+    @media @desktop-widths
+    {
+        font-size: 18px;
+
+        width: 575px;
+        margin-bottom: 40px;
+    }
+}
+
+.main-photos__epilog
+{
+    margin-top: 40px;
+    margin-bottom: 42px;
+
+    text-align: center;
+
+    .container();
+    @media @tablet-widths
+    {
+        margin-top: 95px;
+        margin-bottom: 68px;
+    }
+    @media @desktop-widths
+    {
+        margin-top: 60px;
+        margin-bottom: 68px;
+    }
+}
+
+.main-photos__epilogP
+{
+    margin: 0;
+    padding: 0 32px;
+    @media @tablet-widths
+    {
+        font-size: 18px;
+    }
+    @media @desktop-widths
+    {
+        font-size: 18px;
+    }
 }

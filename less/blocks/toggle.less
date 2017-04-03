@@ -1,0 +1,54 @@
+.slider__toggle
+{
+    position: relative;
+
+    width: 22px;
+    height: 15px;
+    margin-left: 3px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    &::before
+    {
+        position: absolute;
+        bottom: 6px;
+        left: 5px;
+
+        display: block;
+
+        width: 7px;
+        height: 7px;
+
+        content: '';
+
+        opacity: .3;
+        border-radius: 50%;
+        background-color: @dark-gray;
+    }
+    &--active
+    {
+        &::before
+        {
+            /*background: transparent;*/
+            bottom: 3px;
+            left: 3px;
+
+            opacity: 1;
+            border: 3px solid @dark-gray;
+            background-color: @white;
+        }
+    }
+    &:hover:not(&--active)::before
+    {
+        opacity: .6;
+    }
+    &:active:not(&--active)::before
+    {
+        opacity: .1;
+    }
+}
