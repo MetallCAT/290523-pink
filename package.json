@@ -18,7 +18,7 @@
     "run-sequence": "^1.2.2",
     "del": "^2.2.2",
     "css-mqpacker": "^5.0.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.2.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
