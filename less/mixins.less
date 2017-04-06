@@ -1,29 +1,36 @@
-.container() {
-  width: 320px;
-  margin: 0 auto;  
-  padding: 0;
-    
-  @media @tablet-widths {
-    width: 660px;    
-  }
+.container()
+{
+    width: 320px;
+    margin: 0 auto;
+    padding: 0;
 
-  @media @desktop-widths {
-    width: 960px;
-  }   
+    @media @tablet-widths
+    {
+        width: 660px;
+    }
+
+    @media @desktop-widths
+    {
+        width: 960px;
+    }
 }
 
-.fonts-bold() {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 700;
+.fonts-bold()
+{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 700;
 }
 
-.fonts-light() {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 300;
+.fonts-light()
+{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
 }
 
-.form-cover() {
-  .container();
-  display: flex;
-  flex-direction: column;  
+.form-cover()
+{
+    display: flex;
+    flex-direction: column;
+
+    .container();
 }

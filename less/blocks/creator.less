@@ -1,12 +1,68 @@
-.creator {
-  display: flex;
-  align-self: center;
-  align-items: center;
-  width: 128px;  
+.creator
+{
+    display: flex;
+
+    width: 128px;
+
+    align-self: center;
+    align-items: center;
+    @media @tablet-widths
+    {
+        margin-top: 13px;
+        margin-right: 22px;
+    }
+    @media @desktop-widths
+    {
+        margin-top: 13px;
+        margin-right: 36px;
+    }
 }
 
-.creator__tille {  
-  line-height: 18px;  
-  padding-right: 15px;
-  padding-bottom: 10px;
-} 
+.creator__tille
+{
+    line-height: 18px;
+
+    padding-right: 15px;
+    padding-bottom: 10px;
+    @media @desktop-widths
+    {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+.creator__link
+{
+    color: @red;
+    @media @desktop-widths
+    {
+        margin-top: 8px;
+    }
+}
+
+.creator__link:hover
+{
+    color: @dark-gray;
+}
+
+.creator__link:active
+{
+    opacity: .3;
+}
+
+.creator__link svg
+{
+    fill: @red;
+}
+
+.creator__link svg:hover
+{
+    fill: @black;
+}
+
+.creator__link svg:active
+{
+    opacity: .3;
+
+    fill: @black;
+}
